@@ -1,0 +1,120 @@
+/* line 6, main.scss */
+#login-body {
+  background-color: #e67365;
+}
+
+/* line 10, main.scss */
+#login-header {
+  background-color: #c25e4d;
+  color: #fff;
+  height: 96px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 19, main.scss */
+h1 {
+  padding-top: 28px;
+}
+
+/* line 23, main.scss */
+#login-body form {
+  margin-top: 10px;
+}
+/* line 28, main.scss */
+#login-body form input[type=text] {
+  height: 44px;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 20px;
+  border: 0;
+  border-color: #fff;
+}
+
+/* line 40, main.scss */
+#email {
+  background-image: url("../images/login_1.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase;
+}
+
+/* line 47, main.scss */
+#password {
+  background-image: url("../images/login_2.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase;
+}
+
+/* line 54, main.scss */
+::-webkit-input-placeholder {
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* line 60, main.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* line 66, main.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* line 72, main.scss */
+:-ms-input-placeholder {
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* line 78, main.scss */
+input[type=submit] {
+  height: 44px;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* line 97, main.scss */
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #e67365;
+}
+
+/* line 102, main.scss */
+input[type=submit]:active {
+  background-color: #fff;
+  color: #e67365;
+}
+
+/* line 107, main.scss */
+#login-or {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+/* line 114, main.scss */
+#login-tri {
+  background: url("../images/login_tri.png") no-repeat top center;
+  top: 0px;
+  height: 20px;
+}
