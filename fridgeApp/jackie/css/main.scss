@@ -1,6 +1,10 @@
 $red: #c25e4d;
 $lightpink:#e67365;
 $gray: #ccc;
+$green: #93a844;
+$darkgreen: #748a42;
+$yellow: #e9cb5f;
+
 
 
 #login-body{
@@ -32,6 +36,7 @@ input[type=text]{
 	margin-top:20px;
 	border:0;
 	border-color:#fff;
+	padding-left: 20px;
 
 }
 
@@ -55,6 +60,7 @@ input[type=text]{
    color: $gray;
    padding-left:10px;
    text-transform:uppercase;
+
 }
 
 :-moz-placeholder { /* Firefox 18- */
@@ -115,4 +121,102 @@ input[type=submit]:active{
 	background: url("../images/login_tri.png") no-repeat top center;
 	top: 0px;
 	height: 20px;
+}
+
+/*********************************Register****************/
+.back {
+	display:inline-block;
+		
+
+position: absolute;
+left: 11px;
+top: 8px;
+cursor:pointer;
+	/*background: url("../images/white_back.png") no-repeat;
+	*/
+}
+
+h3 {
+	/*text-transform:uppercase;*/
+	color:#fff;
+	font-weight:lighter;
+	font-size:14px;
+	margin-bottom:0px;
+	margin-top:20px;
+	/*text-align:left;*/
+}
+
+.back img {
+	vertical-align: middle;
+
+
+}
+#reg-header {
+	background-color:$darkgreen;
+	color:#fff;
+
+}
+input[type=text]{
+	height:44px;
+	width:80%;
+	border-radius: 30px;
+	margin-top:20px;
+	border:0;
+	border-color:#fff;
+	padding-left: 20px;
+
+}
+
+#reg-body input[type=submit]:hover{
+	background-color:#fff;
+	color:$green;
+}
+
+#reg-body input[type=submit]:active{
+	background-color:#fff;
+	color:$green;
+}
+
+h2 {
+	font-weight:lighter;
+	padding:8px;
+	font-size:16px;	
+		vertical-align: middle;
+		margin-bottom:0px;
+
+display: inline-block;	
+
+}
+
+#reg-body{
+	background-color:$green;
+
+}
+
+#reg_username {
+	background-image:url('../images/username.png');
+	background-repeat:no-repeat;
+	background-position:98%;
+	text-transform:uppercase;
+}
+
+#reg_email {
+	background-image:url('../images/email.png');
+	background-repeat:no-repeat;
+	background-position:98%;
+	text-transform:uppercase;
+}
+
+#reg_password {
+	background-image:url('../images/password.png');
+	background-repeat:no-repeat;
+	background-position:98%;
+	text-transform:uppercase;
+}
+
+#reg_Cpassword {
+	background-image:url('../images/password.png');
+	background-repeat:no-repeat;
+	background-position:98%;
+	text-transform:uppercase;
 }

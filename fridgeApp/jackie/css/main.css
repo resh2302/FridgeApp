@@ -1,0 +1,225 @@
+/* line 10, main.scss */
+#login-body {
+  background-color: #e67365;
+}
+
+/* line 14, main.scss */
+#login-header {
+  background-color: #c25e4d;
+  color: #fff;
+  height: 96px;
+  padding-top: 15px;
+  padding-bottom: 15px;
+}
+
+/* line 23, main.scss */
+h1 {
+  padding-top: 28px;
+}
+
+/* line 27, main.scss */
+#login-body form {
+  margin-top: 10px;
+}
+/* line 32, main.scss */
+#login-body form input[type=text] {
+  height: 44px;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 20px;
+  border: 0;
+  border-color: #fff;
+  padding-left: 20px;
+}
+
+/* line 45, main.scss */
+#email {
+  background-image: url("../images/login_1.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase;
+}
+
+/* line 52, main.scss */
+#password {
+  background-image: url("../images/login_2.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase;
+}
+
+/* line 59, main.scss */
+::-webkit-input-placeholder {
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* line 66, main.scss */
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* line 72, main.scss */
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* line 78, main.scss */
+:-ms-input-placeholder {
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase;
+}
+
+/* line 84, main.scss */
+input[type=submit] {
+  height: 44px;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-size: 18px;
+}
+
+/* line 103, main.scss */
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #e67365;
+}
+
+/* line 108, main.scss */
+input[type=submit]:active {
+  background-color: #fff;
+  color: #e67365;
+}
+
+/* line 113, main.scss */
+#login-or {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: -10px;
+}
+
+/* line 120, main.scss */
+#login-tri {
+  background: url("../images/login_tri.png") no-repeat top center;
+  top: 0px;
+  height: 20px;
+}
+
+/*********************************Register****************/
+/* line 127, main.scss */
+.back {
+  display: inline-block;
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  cursor: pointer;
+  /*background: url("../images/white_back.png") no-repeat;
+  */
+}
+
+/* line 139, main.scss */
+h3 {
+  /*text-transform:uppercase;*/
+  color: #fff;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  /*text-align:left;*/
+}
+
+/* line 149, main.scss */
+.back img {
+  vertical-align: middle;
+}
+
+/* line 154, main.scss */
+#reg-header {
+  background-color: #748a42;
+  color: #fff;
+}
+
+/* line 159, main.scss */
+input[type=text] {
+  height: 44px;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 20px;
+  border: 0;
+  border-color: #fff;
+  padding-left: 20px;
+}
+
+/* line 170, main.scss */
+#reg-body input[type=submit]:hover {
+  background-color: #fff;
+  color: #93a844;
+}
+
+/* line 175, main.scss */
+#reg-body input[type=submit]:active {
+  background-color: #fff;
+  color: #93a844;
+}
+
+/* line 180, main.scss */
+h2 {
+  font-weight: lighter;
+  padding: 8px;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  display: inline-block;
+}
+
+/* line 191, main.scss */
+#reg-body {
+  background-color: #93a844;
+}
+
+/* line 196, main.scss */
+#reg_username {
+  background-image: url("../images/username.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase;
+}
+
+/* line 203, main.scss */
+#reg_email {
+  background-image: url("../images/email.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase;
+}
+
+/* line 210, main.scss */
+#reg_password {
+  background-image: url("../images/password.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase;
+}
+
+/* line 217, main.scss */
+#reg_Cpassword {
+  background-image: url("../images/password.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase;
+}
