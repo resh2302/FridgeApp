@@ -11,7 +11,7 @@
 <link rel="stylesheet" href="./assets/stylesheets/demo.css" />
 <!--[if (gt IE 8) | (IEMobile)]><!-->
   <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" />
-  <link href="//netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+  <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
   <link rel="stylesheet" href="css/font-awesome.min.css">
    <link rel="stylesheet" href="css/main.css">
   <link rel="stylesheet" href="css/main.css" />
@@ -111,10 +111,10 @@
     </div> <!-- end fridge add -->
 
 
-     <!-- <div id="fridge_add_step2">
+     <div id="fridge_add_step2">
       <h3>ITEM SUMMARY</h3>
 
-    </div> --> <!-- END fridge_add_step2 -->
+    </div> <!-- END fridge_add_step2 -->
 
 
 
@@ -167,7 +167,7 @@
 
      $(document).ready(function(){
       $("#fridge_add_can1").click(function(){
-        $("#fridge_add").fadeOut(200);
+        $("#fridge_add, #fridge_add_step2").fadeOut(200);
         $("#fridge_body").slideDown(500);
 
       });
