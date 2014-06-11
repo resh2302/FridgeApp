@@ -1,0 +1,167 @@
+#login-body {
+  background-color: #e67365; }
+
+#login-header {
+  background-color: #c25e4d;
+  color: #fff;
+  height: 96px;
+  padding-top: 15px;
+  padding-bottom: 15px; }
+
+h1 {
+  padding-top: 28px; }
+
+#login-body form {
+  margin-top: 10px; }
+  #login-body form input[type=text], #login-body form input[type=password] {
+    height: 44px;
+    width: 80%;
+    border-radius: 30px;
+    margin-top: 20px;
+    border: 0;
+    border-color: #fff;
+    padding-left: 20px; }
+
+#email {
+  background-image: url("../images/login_1.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase; }
+
+#password {
+  background-image: url("../images/login_2.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase; }
+
+::-webkit-input-placeholder {
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase; }
+
+:-moz-placeholder {
+  /* Firefox 18- */
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase; }
+
+::-moz-placeholder {
+  /* Firefox 19+ */
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase; }
+
+:-ms-input-placeholder {
+  color: #cccccc;
+  padding-left: 10px;
+  text-transform: uppercase; }
+
+input[type=submit] {
+  height: 44px;
+  width: 80%;
+  border-radius: 5px;
+  margin-top: 20px;
+  margin-bottom: 5px;
+  background: transparent;
+  border: 1px solid #fff;
+  color: #fff;
+  padding: 7px 14px;
+  cursor: pointer;
+  font-size: 18px; }
+
+input[type=submit]:hover {
+  background-color: #fff;
+  color: #e67365; }
+
+input[type=submit]:active {
+  background-color: #fff;
+  color: #e67365; }
+
+#login-or {
+  font-size: 14px;
+  color: #fff;
+  margin-top: 10px;
+  margin-bottom: -10px; }
+
+#login-tri {
+  background: url("../images/login_tri.png") no-repeat top center;
+  top: 0px;
+  height: 20px; }
+
+/*********************************Register****************/
+.back {
+  display: inline-block;
+  position: absolute;
+  left: 11px;
+  top: 8px;
+  cursor: pointer;
+  /*background: url("../images/white_back.png") no-repeat;
+  */ }
+
+h3 {
+  /*text-transform:uppercase;*/
+  color: #fff;
+  font-weight: lighter;
+  font-size: 14px;
+  margin-bottom: 0px;
+  margin-top: 20px;
+  /*text-align:left;*/ }
+
+.back img {
+  vertical-align: middle; }
+
+#reg-header {
+  background-color: #748a42;
+  color: #fff; }
+
+input[type=text], input[type=password] {
+  height: 44px;
+  width: 80%;
+  border-radius: 30px;
+  margin-top: 20px;
+  border: 0;
+  border-color: #fff;
+  padding-left: 20px; }
+
+#reg-body input[type=submit]:hover {
+  background-color: #fff;
+  color: #93a844; }
+
+#reg-body input[type=submit]:active {
+  background-color: #fff;
+  color: #93a844; }
+
+h2 {
+  font-weight: lighter;
+  padding: 8px;
+  font-size: 16px;
+  vertical-align: middle;
+  margin-bottom: 0px;
+  display: inline-block; }
+
+#reg-body {
+  background-color: #93a844; }
+
+#reg_username {
+  background-image: url("../images/username.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase; }
+
+#reg_email {
+  background-image: url("../images/email.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase; }
+
+#reg_password {
+  background-image: url("../images/password.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase; }
+
+#reg_Cpassword {
+  background-image: url("../images/password.png");
+  background-repeat: no-repeat;
+  background-position: 98%;
+  text-transform: uppercase; }

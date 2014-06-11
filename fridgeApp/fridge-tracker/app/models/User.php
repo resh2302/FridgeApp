@@ -5,19 +5,40 @@ use Illuminate\Auth\Reminders\RemindableInterface;
 
 class User extends Eloquent implements UserInterface, RemindableInterface {
 
-	/**
+        public $timestamps = false;  //added by Reshma
+        protected $fillable = ['email', 'password', 'password_confirmation', 'remember_token'];
+
+        public static $rules = [
+            'email' => 'required|email|unique:users,email',
+            'password' => 'required|Between:4,8|confirmed',
+            'password_confirmation' => 'required|Between:4,8',
+            // 'login_email' => 'required|email',
+            // 'login_password' => 'required'
+        ];
+        
+        public $messages;
+       //  public $messages = array(
+							//     'required' => 'Your :attribute is required.',
+							// );
+        /**
 	 * The database table used by the model.
 	 *
 	 * @var string
 	 */
 	protected $table = 'users';
-
-	/**
+//        protected $primaryKey = 'id';
+        /**
 	 * The attributes excluded from the model's JSON form.
 	 *
 	 * @var array
 	 */
-	protected $hidden = array('password');
+	protected $hidden = array('password', 'remember_token');
+        
+        public function setPasswordAttribute($pass){
+       
+	    	$this->attributes['password'] = Hash::make($pass);
+			
+        }
 
 	/**
 	 * Get the unique identifier for the user.
@@ -57,7 +78,7 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 	 */
 	public function setRememberToken($value)
 	{
-		$this->remember_token = $value;
+		$this->attributes['remember_token'] = $value; //renamed by me to token
 	}
 
 	/**
@@ -80,4 +101,17 @@ class User extends Eloquent implements UserInterface, RemindableInterface {
 		return $this->email;
 	}
 
+    public function isValid() {
+        $validation = Validator::make(Input::all(),static::$rules);
+        // dd($validation);
+        if($validation->passes())
+        {
+            return true;
+        }
+        // dd('validation failed');
+        $this->messages = $validation->messages();
+
+        return false;
+        
+    }
 }

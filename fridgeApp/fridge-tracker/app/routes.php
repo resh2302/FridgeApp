@@ -11,7 +11,31 @@
 |
 */
 
-Route::get('/', function()
-{
-	return View::make('hello');
+// Route::get('/', function()
+// {
+// 	return View::make('hello');
+// });
+
+Route::get('/', function(){
+	return View::make('home');
 });
+
+Route::resource('users', 'UsersController');
+Route::get('register', 'UsersController@create');
+
+// Route::get('users/create', function(){
+// 	Redirect::route('register');
+// });
+
+Route::get('users/create', array('as' => 'register', 'uses' => 'UsersController@create'));
+
+Route::resource('sessions', 'SessionsController');
+Route::get('login', 'SessionsController@create');
+Route::get('sessions/create', array('as' => 'login', 'uses' => 'SessionsController@create'));
+Route::when('sessions/create', 'login');
+
+Route::get('logout', 'SessionsController@destroy');
+
+Route::get('admin', function(){
+   return 'Admin Page...'; 
+})->before('auth');
