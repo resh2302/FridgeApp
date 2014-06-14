@@ -56,10 +56,13 @@ class SessionsController extends \BaseController {
 
                 if (Auth::attempt($credentials))       
                 {
-                    return "Finally!!!";
+                	// dd($this->user->RefrigeratorID);
+                   // return Redirect::to('refrigerators/show')->with('refrigeratorID',Auth::user()->RefrigeratorID);
+                   return Redirect::to('refrigerators/show/'.Auth::user()->RefrigeratorID);
+                   // return Redirect::to('refrigerators/show/{Auth::user()->RefrigeratorID}');
                 }
                 else{
-                    return "Failed!";
+                    return Redirect::back()->withInput()->withErrors("Please enter valid email and password");
                 }
                 
            
@@ -112,7 +115,7 @@ class SessionsController extends \BaseController {
 	{
 		Auth::logout();
                 
-        return Redirect::route('login');
+        return Redirect::to('/');
 	}
 
 

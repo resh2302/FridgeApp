@@ -39,3 +39,6 @@ Route::get('logout', 'SessionsController@destroy');
 Route::get('admin', function(){
    return 'Admin Page...'; 
 })->before('auth');
+
+Route::resource('refrigerators', 'RefrigeratorsController');
+Route::get('refrigerators/show/{RefrigeratorID}', 'RefrigeratorsController@show')->before('auth');

@@ -12,6 +12,8 @@
         <link rel="stylesheet" href="{{ URL::asset('assets/stylesheets/demo.css') }}" />
         <!--[if (gt IE 8) | (IEMobile)]><!-->
           <link rel="stylesheet" href="{{ URL::asset('assets/stylesheets/unsemantic-grid-responsive.css') }}" />
+          <link href="http://netdna.bootstrapcdn.com/font-awesome/4.1.0/css/font-awesome.min.css" rel="stylesheet">
+          <link rel="stylesheet" href="{{ URL::asset('css/font-awesome.min.css')}}">
           <link rel="stylesheet" href="{{ URL::asset('css/main.css') }}" />
         <!--<![endif]-->
         <!--[if (lt IE 9) & (!IEMobile)]>

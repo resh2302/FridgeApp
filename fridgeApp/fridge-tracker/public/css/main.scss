@@ -4,6 +4,150 @@ $gray: #ccc;
 $green: #93a844;
 $darkgreen: #748a42;
 $yellow: #e9cb5f;
+$lightorange:#fcc062;
+$lightgreen:#93a844;
+$green:#748a42;
+
+/*home*/
+.container {
+	/*position: relative;
+	width: 50%;
+	max-width: 500px;
+	left: 90px;
+	top: 13%;
+	padding: 10px 20px;*/
+	text-align:center;
+}
+
+.sl_tab{
+	font-family:sans-serif;
+	font-weight:lighter;
+	color:#fff;
+	font-size:20px;
+	border:1px solid #fff;
+	padding:15px 30px;
+	display:inline-block;
+	border-radius:5px;
+	margin-top:25px;
+	cursor:pointer;
+	text-shadow: 0 1px 1px #ccc;
+	
+
+}
+
+#index_signup{
+	margin-right:15px;
+
+}
+
+#list_wrapper{
+	float:right;
+}
+
+#list_wrapper ul{
+	 list-style-type: none;
+	 margin-top:174px;
+	 padding-left: 0px;
+	 p {
+	 	display: inline-block;
+		float: left;
+		text-transform: capitalize;
+		color:#fff;
+		font-family:sans-serif;
+		font-weight:100;
+
+		span{
+			text-transform:lowercase;
+		}
+		}
+	 
+}
+
+.index_list {
+	background-position:left;
+	background-repeat:no-repeat;
+	height: 56px;
+	background-size: 32px;
+	text-align:left;
+	padding-left: 59px;
+	text-transform: uppercase;
+
+}
+
+#home_scan {
+	background-image:url('../images/home_scan.png');
+	height: 44px;
+	display: inline-block;
+	float: left;
+
+
+	vertical-align: middle;
+}
+
+#home_fridge {
+	background-image:url('../images/home_fridge.png');
+	display: inline-block;
+	float: left;
+
+
+}
+
+
+
+#home_list {
+	background-image:url('../images/home_list.png');
+		display: inline-block;
+float: left;
+}
+
+#home_recipe {
+	background-image:url('../images/home_recipe.png');
+		display: inline-block;
+float: left;
+}
+
+#home_invite {
+	background-image:url('../images/home_invite.png');
+		display: inline-block;
+float: left;
+}
+.slides-navigation .fa-3x {
+font-size: 3em;
+color: #fff;
+}
+
+.slides-pagination {
+
+margin-bottom: 20px;
+}
+
+.slides-pagination a.current {
+background: #fff;
+}
+
+.slides-pagination a {
+border: 1px solid #fff;
+
+}
+.clear {
+	clear:both;
+}
+
+.home_h1 {
+
+font-weight: 100;
+font-family:sans-serif;
+color: white;
+text-shadow: 0 1px 1px #000;
+margin-top: 98px;
+font-size: 2em;
+float: right;
+margin-right:350px;
+margin-bottom: 36px;
+
+
+
+}
 
 
 
@@ -29,7 +173,7 @@ padding-top: 28px;
 	margin-top:10px;
 
 
-input[type=text], input[type=password]{
+input[type=text], input[type=email], input[type=password]{
 	height:44px;
 	width:80%;
 	border-radius: 30px;
@@ -148,14 +292,15 @@ h3 {
 
 .back img {
 	vertical-align: middle;
-}
 
+
+}
 #reg-header {
 	background-color:$darkgreen;
 	color:#fff;
 
 }
-input[type=text], input[type=password]{
+input[type=text], input[type=email], input[type=password]{
 	height:44px;
 	width:80%;
 	border-radius: 30px;
@@ -219,3 +364,342 @@ display: inline-block;
 	background-position:98%;
 	text-transform:uppercase;
 }
+
+/*********************************Fridge****************/
+
+#fridge-header {
+	background-color:$lightorange;
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 44px;
+
+
+
+	#fridge_sort{
+		text-decoration:none;
+		text-align:left;
+		/*line-height: 3;*/
+		line-height: 3;
+		display: inline;
+		float: left;
+				li{
+			list-style-type:none;
+			display:inline;
+			margin-left: 5px;
+			color:#fff;
+			font-size:12px;
+			vertical-align:middle;
+		}
+	}
+
+	#fridge_sa{
+		line-height: 3;
+		text-decoration:none;
+		float:right;
+		li{
+			list-style-type:none;
+			display:inline;
+			margin-right:20px;
+			margin-left:0px;
+			i{
+				color:#fff;
+			}
+
+		}
+		#fridge_add_icon{
+			cursor:pointer;
+		}
+
+		#fridge_search_icon{
+			cursor:pointer;
+		}
+
+	}
+}
+
+#fridge_body {
+	background:url('../images/fridge_pantry.png');
+	background-repeat: repeat-y;
+	 -webkit-background-size: 100%;
+	  -moz-background-size: 100% ;
+	  -o-background-size: 100%;
+	  background-size: 100%;
+	  height:100%;
+	  margin-top: -40px;
+
+}
+
+.fridge_footer{
+	background-color:#fff;
+	position:fixed;
+	bottom:0;
+	left:0;
+	width: 100%;
+/*	min-height:50px;*/
+
+	ul{
+		list-style-type: none;
+		text-align:center;
+		margin-bottom: 0px;
+
+		
+	li{display: inline-block;
+		/*text-align:center;*/
+		vertical-align: middle;
+		padding-top:5px;
+		padding-bottom:5px;
+		margin-left:25px;
+		img {
+			width: 35px;
+			vertical-align: middle;
+			float: left;
+		}
+
+		p{
+			text-align:center;
+			color:#999;
+			margin-bottom: 0;
+			font-size:10px;
+			margin-top: 36px;
+			text-transform:uppercase;
+
+		}
+
+		}
+	li:nth-child(1){ 
+		margin-left: 0px;
+		
+		img {
+		margin-left: 8px;
+		margin-top: 10px;
+		width: 30px;
+
+		}
+	}
+	li:nth-child(2) img{
+		width: 22px;
+margin-top: 4px;
+margin-left: 3px;
+	}
+
+	li:nth-child(3) img{
+		width: 25px;
+margin-top: 2px;
+margin-left: 12px;
+
+	}
+
+	li:nth-child(4) img{
+		width: 36px;
+margin-left: 20px;
+margin-top: 5px;
+	
+	}
+
+	li:nth-child(5) img{
+		width: 28px;
+margin-top: 5px;
+margin-top: 7px;
+	
+	
+	}
+	
+	}
+}
+
+#fridge_search_form{
+	display:none;
+}
+
+#fridge_search_form input[type=text]{
+	width: 51%;
+	margin-top: 6px;
+	height: 30px;
+	border-radius: 6px;	
+	vertical-align: middle;
+}
+
+#fridge_cancel {
+	background: transparent;
+	border: none;
+	vertical-align: middle;
+	i{
+		color:#fff;
+	}
+}
+
+#fridge_body{
+	/*display:none;*/
+}
+
+#fridge_add{
+	margin-top:60px;
+	display:none;
+	form{
+		width: 84%;
+		margin: 0 auto;
+	h3{
+		color:$lightorange;
+		font-size:15px;
+		float: left;
+		margin-left: 0px;
+		text-transform: uppercase;
+		font-weight: 200;
+	}
+
+	input[type=text]{
+		background-color:#eee;
+		border-radius:6px;
+		float: left;
+		width:94%;
+
+	}
+
+	#fridge_food_expiary{
+		width:80%;
+	}
+
+	#fridge_btn_ex {
+		background: transparent;
+		border: none;
+		vertical-align: middle;
+		margin-top: 21px;
+		float: left;
+		width: 10%;
+		padding: 3px;
+		i {
+			color:#bbb;
+			width:100%;
+
+
+		}
+	}
+	} /*end form*/
+
+	#fridge_or{
+		margin-top:30px;
+
+	h4 {
+		display: inline;
+		vertical-align: middle;
+		color:#808080;
+	}
+
+	} /*#fridge_or*/
+
+	#fridge_scan{
+		margin-top: 30px;
+
+	#fridge_btn_scan {
+		width: 84%;
+		margin: 0 auto;
+		background: transparent;
+		border: none;
+		vertical-align: middle;
+		background-color:$lightgreen;
+		color:#fff;
+		border-radius:6px;
+		padding:15px;
+		border-bottom-color: $green;
+		border-width: 7px;
+		border-bottom-style: solid;
+		cursor:pointer;
+		margin-bottom:30px;
+		p{
+			display:inline-block;
+			font-size:25px;
+			vertical-align:bottom;
+			margin-bottom:8px;
+			padding-right:20px;
+		}
+		i{
+			vertical-align:bottom;
+
+		}
+	} /*fridge_btn_scan
+*/
+
+#fridge_btn_scan:hover,
+#fridge_btn_scan:active
+ {
+	background-color:$green;
+	border-bottom-color:$lightgreen;
+}
+
+
+	
+
+	}
+
+
+}
+
+
+	#fridge_add_step1 {
+		width:84%;
+		margin:0 auto;
+		.fridge_btn_cancel{
+			width:49%;
+			display:inline;
+			background:transparent;
+			background-color:#eee;
+			color:#808080;
+			border:none;
+			padding:18px;
+			font-size:20px;
+			cursor:pointer;
+		}
+		.fridge_btn_nxt{
+			width:49%;
+			display:inline;
+			background:transparent;
+			background-color:$lightorange;
+			color:#fff;
+			border:none;
+			padding:18px;
+			font-size:20px;
+		}
+
+	}
+
+
+	#fridge_add_step2{
+	display:none;
+
+	h3{
+		color:$lightorange;
+		font-size:15px;
+		float: left;
+		margin-left: 0px;
+		text-transform: uppercase;
+		font-weight: 200;
+	
+	}
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+

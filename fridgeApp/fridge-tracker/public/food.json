@@ -1,0 +1,8 @@
+{
+	"food":[
+	    {"name":"apple", "img":"/images/food/apple.png"}, 
+	    {"name":"beetroot", "img":"/images/food/beetroot.png"},
+	    {"name":"berries", "img":"/images/food/berries.png"},
+	    {"name":"brinjal", "img":"/images/food/brinjal.png"}
+	]
+}
