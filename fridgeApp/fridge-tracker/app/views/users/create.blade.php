@@ -6,7 +6,7 @@
           <div id="reg-header">
             <div class="back">
                 <a href="{{ URL::to('/'); }}">
-                    <img src="images/white_back.png" alt="back">
+                    <img src="{{ URL::asset('images/white_back.png') }}" alt="back">
                 </a>              
             </div>
           <h2>SIGN UP</h2>
@@ -31,8 +31,12 @@
         
         {{Form::close()}}
         </div>
-        <script src="./assets/javascripts/jquery.js"></script>
-        <script src="./assets/javascripts/demo.js"></script>
-    <body>
+       </div> 
+        <?php
+            // include_once(app_path().'/includes/scripts.blade.php');
+        ?>
+        <script src="{{ URL::asset('/assets/javascripts/jquery.js') }}"></script>
+        <script src="{{ URL::asset('/assets/javascripts/demo.js') }}"></script>
+    </body>
 
 @stop

@@ -8,6 +8,6 @@
 	    <br>
 	     {{link_to("/login", "SIGN IN")}}
 	     
-     <body>
+     </body>
 
 @stop
