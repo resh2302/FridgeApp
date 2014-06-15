@@ -375,6 +375,10 @@ display: inline-block;
 	color:#999;
 	margin-top:10px;
 	margin-bottom:-10px;
+	img{
+
+	margin: 0px;
+	}
 }
 #frd{
 	background:url('../images/fridge_icon.png');
@@ -500,22 +504,29 @@ display: inline-block;
 	  .frd_items{
 	  	display: inline-block;
 		list-style-type: none;
-		width: 150px;
+		width: 160px;
 
 	  	.editSection{
 	  		display:inline-block;
 	  		position:absolute;
 	  		margin-left: -67px;
 			margin-top: 34px;
+			display:none;
+			width: 120px;
 			.frd_item_delete{
 				background-color:$brightred;
 				color:#fff;
 				padding:10px;
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
 			}
 			.frd_item_edit{
 				background-color:#f2f2f2;
 				color:#4d4d4d;
 				padding:10px;
+				margin-left: -4px;
+				border-bottom-right-radius: 5px;
+				border-top-right-radius: 5px;
 			}
 	  	}
 	  /*	span{
@@ -860,7 +871,7 @@ option{
 	text-align:left;
 	font-size:11px;
 	a {
-		text-decoration:none;
+		text-decoration:underline;
 		color:$green;
 		text-transform:uppercase;
 	}
@@ -970,17 +981,83 @@ width: 80%;
 	  .frd_items{
 	  	display:inline;
 	  	list-style-type:none;
+	  	width: 102px;
+	  	margin-left: 0px;
+
+	  	.editSection{
+	  		width: 69px;
+			display:none;
+			.frd_item_delete{
+				font-size:10px;
+				padding:5px;
+			}
+			.frd_item_edit{
+				font-size:10px;
+				padding:5px;
+			}
+	  	}
 	  	img{
 	  		height: 62px;
 	  		margin-bottom: 28px;
-	  	}
-	  }
-	}
+	  	}/*img*/
+	  }/*frd_items*/
+	}/*ul*/
 
 	
-	}
+	} /*fridge_body*/
+
+#frd_frz{
+	margin-top:20px;
 
 }
+
+
+#frd{
+	background:url('../images/fridge_icon.png');
+	height:220px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 85px;
+	cursor:pointer;
+	margin-bottom: 10px;
+
+
+}
+
+#frd:hover, #frd:active{
+	background:url('../images/fridge_icon_hover.png');
+	height:220px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 85px;
+	cursor:pointer;
+	margin-bottom: 10px;
+
+}
+
+#frz {
+	background:url('../images/freezer_icon.png');
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 85px;
+	cursor:pointer;
+	margin-top: 10px;
+
+}
+
+#frz:hover, #frz:active{
+	background:url('../images/freezer_icon_hover.png');
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 85px;
+	cursor:pointer;
+	margin-top: 10px;
+
+}
+
+}/*media query*/
 
 
 
