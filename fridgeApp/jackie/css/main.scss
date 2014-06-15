@@ -364,6 +364,61 @@ display: inline-block;
 }
 
 /*********************************Fridge****************/
+#frd_frz{
+	margin-top:50px;
+
+}
+
+#frd-or{
+	font-size:14px;
+	color:#999;
+	margin-top:10px;
+	margin-bottom:-10px;
+}
+#frd{
+	background:url('../images/fridge_icon.png');
+	height:220px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 150px;
+	cursor:pointer;
+	margin-bottom: 30px;
+
+
+}
+
+#frd:hover, #frd:active{
+	background:url('../images/fridge_icon_hover.png');
+	height:220px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 150px;
+	cursor:pointer;
+	margin-bottom: 30px;
+
+}
+
+#frz {
+	background:url('../images/freezer_icon.png');
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 150px;
+	cursor:pointer;
+	margin-top: 30px;
+
+}
+
+#frz:hover, #frz:active{
+	background:url('../images/freezer_icon_hover.png');
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 150px;
+	cursor:pointer;
+	margin-top: 30px;
+
+}
 
 .fridge_sort{
 		text-decoration:none;
@@ -383,6 +438,7 @@ display: inline-block;
 	}
 
 #fridge-header {
+	display:none;
 	background-color:$lightorange;
 	position:fixed;
 	top:0;
@@ -417,6 +473,7 @@ display: inline-block;
 }
 
 #fridge_body {
+	display:none;
 	background:url('../images/fridge_pantry.png');
 	background-repeat: repeat-y;
 	margin-top: 44px;

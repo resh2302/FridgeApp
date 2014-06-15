@@ -22,6 +22,7 @@
 </head>
 <body>
 
+
     <header>
       <div id="fridge-header">
         <!-- <div class="back">
@@ -53,6 +54,12 @@
       <h3>ITEM SUMMARY</h3>
 
     </div> --> <!-- END fridge_add_step2 -->
+
+    <div id="frd_frz">
+     <div id="frd"></div>
+     <div id="frd-or"><img src="images/frd_line.png"><img src="images/frd_line.png"> OR<img src="images/frd_line.png"><img src="images/frd_line.png"> </div>
+     <div id="frz"></div>
+    </div> <!-- END frd_frz -->
 
  
    
@@ -208,6 +215,15 @@
   <script src="./assets/javascripts/demo.js"></script>
 
    <script>
+
+   $(document).ready(function(){
+      $("#frd").click(function(){
+        $("#frd_frz").hide(200);
+        $("#fridge_body, #fridge-header").slideDown(500);
+
+      });
+    });
+
 
    //onclick of search show search panel
 
