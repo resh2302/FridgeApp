@@ -66,7 +66,12 @@
 
     <div  id="fridge_body">
       <ul>
-        <li></li>
+        <li class="frd_items"><img src="images/items/beetroot.png"></li>
+         <li class="frd_items"><img src="images/items/chicken.png"></li>
+          <li class="frd_items"><img src="images/items/milk.png"></li>
+          <li class="frd_items"><img src="images/items/fish.png"></li>
+           <li class="frd_items"><img src="images/items/fish.png"></li>
+            <li class="frd_items"><img src="images/items/fish.png"></li>
       </ul>
       
     </div> <!-- end fridge_body -->
@@ -235,6 +240,18 @@
 
       });
     });
+
+     //This doesn't work WHYYYY???
+
+    $(document).ready(function(){
+      $("#fridge_cancel").click(function(){
+        $("#fridge_search_form, #frd_frz").hide(200);
+        $("#fridge_body, #fridge-header").slideDown(500);
+
+      });
+    });
+
+
 
     //onclick of search show add panel
 
