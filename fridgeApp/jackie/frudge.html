@@ -66,12 +66,52 @@
 
     <div  id="fridge_body">
       <ul>
-        <li class="frd_items"><img src="images/items/beetroot.png"></li>
-         <li class="frd_items"><img src="images/items/chicken.png"></li>
-          <li class="frd_items"><img src="images/items/milk.png"></li>
-          <li class="frd_items"><img src="images/items/fish.png"></li>
-           <li class="frd_items"><img src="images/items/fish.png"></li>
-            <li class="frd_items"><img src="images/items/fish.png"></li>
+        <li class="frd_items"><img src="images/items/beetroot.png">
+          <div class="editSection">
+            <a class="frd_item_delete" href="#">Delete</a>
+            <a class="frd_item_edit" href="#">Edit</a>
+          </div> <!-- End editSection -->
+        </li>
+     
+
+        
+
+
+
+
+         <li class="frd_items"><img src="images/items/chicken.png">
+          <div class="editSection">
+            <a class="frd_item_delete" href="#">Delete</a>
+            <a class="frd_item_edit" href="#">Edit</a>
+          </div> <!-- End editSection -->
+         </li>
+         
+          <li class="frd_items"><img src="images/items/milk.png">
+             <div class="editSection">
+            <a class="frd_item_delete" href="#">Delete</a>
+            <a class="frd_item_edit" href="#">Edit</a>
+          </div> <!-- End editSection -->
+          </li>
+          
+          <li class="frd_items"><img src="images/items/fish.png">
+            <div class="editSection">
+            <a class="frd_item_delete" href="#">Delete</a>
+            <a class="frd_item_edit" href="#">Edit</a>
+          </div> <!-- End editSection -->
+          </li>
+
+           <li class="frd_items"><img src="images/items/sausage.png">
+            <div class="editSection">
+            <a class="frd_item_delete" href="#">Delete</a>
+            <a class="frd_item_edit" href="#">Edit</a>
+          </div> <!-- End editSection -->
+           </li>
+            <li class="frd_items"><img src="images/items/womanpepper.png">
+              <div class="editSection">
+            <a class="frd_item_delete" href="#">Delete</a>
+            <a class="frd_item_edit" href="#">Edit</a>
+          </div> <!-- End editSection -->
+            </li>
       </ul>
       
     </div> <!-- end fridge_body -->
@@ -239,15 +279,16 @@
         $("#fridge_search_form").slideDown(500);
 
       });
+
+    //put the colde here
     });
 
      //This doesn't work WHYYYY???
 
     $(document).ready(function(){
       $("#fridge_cancel").click(function(){
-        $("#fridge_search_form, #frd_frz").hide(200);
-        $("#fridge_body, #fridge-header").slideDown(500);
-
+        $("#fridge_search_form").hide(200);
+        $("#fridge-header").slideDown(500);
       });
     });
 

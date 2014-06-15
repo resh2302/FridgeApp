@@ -1,4 +1,5 @@
 $red: #c25e4d;
+$brightred:#ff1d25;
 $lightpink:#e67365;
 $gray: #ccc;
 $green: #93a844;
@@ -473,6 +474,7 @@ display: inline-block;
 }
 
 #fridge_body {
+
 	display:none;
 	background:url('../images/fridge_pantry.png');
 	background-repeat: repeat-y;
@@ -483,6 +485,9 @@ display: inline-block;
 	  background-size: 640px;
 	  height:100%;
 	  background-position: center top;
+	  /*background-color:#d3d3d3;*/
+
+	  	
 
 	  ul{
 	  	position: relative;
@@ -493,8 +498,38 @@ display: inline-block;
 		margin: 0 auto;
 
 	  .frd_items{
-	  	display:inline;
-	  	list-style-type:none;
+	  	display: inline-block;
+		list-style-type: none;
+		width: 150px;
+
+	  	.editSection{
+	  		display:inline-block;
+	  		position:absolute;
+	  		margin-left: -67px;
+			margin-top: 34px;
+			.frd_item_delete{
+				background-color:$brightred;
+				color:#fff;
+				padding:10px;
+			}
+			.frd_item_edit{
+				background-color:#f2f2f2;
+				color:#4d4d4d;
+				padding:10px;
+			}
+	  	}
+	  /*	span{
+	  		
+			left: 20;
+			margin-left: -50px;
+			margin-top: 35px;
+			img{
+				width: 39px;
+				height: auto;
+			}
+
+	  	}*/
+	  
 	  	img{
 	  		height: 100px;
 	  		margin-bottom: 84px;
@@ -927,7 +962,7 @@ width: 80%;
 	  ul{
 	  	position: relative;
 		/* left: 500px; */
-		top: 77px;
+		top: 67px;
 		/*margin-bottom: 0px;*/
 		width: 320px;
 		margin: 0 auto;
@@ -936,8 +971,8 @@ width: 80%;
 	  	display:inline;
 	  	list-style-type:none;
 	  	img{
-	  		height: 50px;
-	  		margin-bottom: 41px;
+	  		height: 62px;
+	  		margin-bottom: 28px;
 	  	}
 	  }
 	}
