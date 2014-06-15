@@ -535,24 +535,19 @@ h2 {
   color: #fff;
 }
 
-/* line 531, main.scss */
-#fridge_body {
-  /*display:none;*/
-}
-
-/* line 535, main.scss */
+/* line 532, main.scss */
 #fridge_add {
   margin-top: 60px;
   display: none;
   /*end form*/
   /*#fridge_or*/
 }
-/* line 538, main.scss */
+/* line 535, main.scss */
 #fridge_add form {
   width: 84%;
   margin: 0 auto;
 }
-/* line 541, main.scss */
+/* line 538, main.scss */
 #fridge_add form h3 {
   color: #fcc062;
   font-size: 15px;
@@ -561,18 +556,18 @@ h2 {
   text-transform: uppercase;
   font-weight: 200;
 }
-/* line 550, main.scss */
+/* line 547, main.scss */
 #fridge_add form input[type=text] {
   background-color: #eee;
   border-radius: 6px;
   float: left;
   width: 94%;
 }
-/* line 558, main.scss */
+/* line 555, main.scss */
 #fridge_add form #fridge_food_expiary {
   width: 80%;
 }
-/* line 562, main.scss */
+/* line 559, main.scss */
 #fridge_add form #fridge_btn_ex {
   background: transparent;
   border: none;
@@ -582,28 +577,28 @@ h2 {
   width: 10%;
   padding: 3px;
 }
-/* line 570, main.scss */
+/* line 567, main.scss */
 #fridge_add form #fridge_btn_ex i {
   color: #bbb;
   width: 100%;
 }
-/* line 579, main.scss */
+/* line 576, main.scss */
 #fridge_add #fridge_or {
   margin-top: 30px;
 }
-/* line 582, main.scss */
+/* line 579, main.scss */
 #fridge_add #fridge_or h4 {
   display: inline;
   vertical-align: middle;
   color: #808080;
 }
-/* line 590, main.scss */
+/* line 587, main.scss */
 #fridge_add #fridge_scan {
   margin-top: 30px;
   	  /*fridge_btn_scan
   */
 }
-/* line 593, main.scss */
+/* line 590, main.scss */
 #fridge_add #fridge_scan #fridge_btn_scan {
   width: 84%;
   margin: 0 auto;
@@ -620,7 +615,7 @@ h2 {
   cursor: pointer;
   margin-bottom: 30px;
 }
-/* line 608, main.scss */
+/* line 605, main.scss */
 #fridge_add #fridge_scan #fridge_btn_scan p {
   display: inline-block;
   font-size: 25px;
@@ -628,23 +623,23 @@ h2 {
   margin-bottom: 8px;
   padding-right: 20px;
 }
-/* line 615, main.scss */
+/* line 612, main.scss */
 #fridge_add #fridge_scan #fridge_btn_scan i {
   vertical-align: bottom;
 }
-/* line 624, main.scss */
+/* line 621, main.scss */
 #fridge_add #fridge_scan #fridge_btn_scan:hover,
 #fridge_add #fridge_scan #fridge_btn_scan:active {
   background-color: #748a42;
   border-bottom-color: #93a844;
 }
 
-/* line 638, main.scss */
+/* line 635, main.scss */
 #fridge_add_step1 {
   width: 84%;
   margin: 0 auto;
 }
-/* line 641, main.scss */
+/* line 638, main.scss */
 #fridge_add_step1 .fridge_btn_cancel {
   width: 49%;
   display: inline;
@@ -656,7 +651,7 @@ h2 {
   font-size: 20px;
   cursor: pointer;
 }
-/* line 652, main.scss */
+/* line 649, main.scss */
 #fridge_add_step1 .fridge_btn_nxt {
   width: 49%;
   display: inline;
@@ -668,13 +663,13 @@ h2 {
   font-size: 20px;
 }
 
-/* line 666, main.scss */
+/* line 663, main.scss */
 #fridge_add_step2 {
   display: none;
   text-align: center;
   margin-top: 70px;
 }
-/* line 671, main.scss */
+/* line 668, main.scss */
 #fridge_add_step2 h3 {
   color: #fcc062;
   font-size: 15px;
@@ -685,13 +680,13 @@ h2 {
 }
 
 /*fridge_add_step2*/
-/* line 684, main.scss */
+/* line 681, main.scss */
 .itm_left {
   float: left;
   display: inline-block;
 }
 
-/* line 689, main.scss */
+/* line 686, main.scss */
 .itm_title {
   text-transform: uppercase;
   /*line-height:2;*/
@@ -701,7 +696,7 @@ h2 {
   font-size: 11px;
 }
 
-/* line 699, main.scss */
+/* line 696, main.scss */
 .itm_ans {
   text-align: left;
   margin-left: -10px;
@@ -711,13 +706,13 @@ h2 {
 	float:right;
 	display:inline-block;
 }*/
-/* line 709, main.scss */
+/* line 706, main.scss */
 #stp2_wrapper {
   width: 80%;
   margin: 0 auto;
 }
 
-/* line 714, main.scss */
+/* line 711, main.scss */
 #stp2_wrapper .itm_ans {
   height: 18px;
   width: auto;
@@ -725,7 +720,7 @@ h2 {
   padding-left: 0px;
 }
 
-/* line 721, main.scss */
+/* line 718, main.scss */
 #itm_name_cat {
   margin-left: 28px;
   background: transparent;
@@ -733,12 +728,12 @@ h2 {
   width: 97px;
   margin-left: 0px;
 }
-/* line 728, main.scss */
+/* line 725, main.scss */
 #itm_name_cat option {
   color: #ddd;
 }
 
-/* line 733, main.scss */
+/* line 730, main.scss */
 #tag_container {
   background-color: #fff;
   width: 97px;
@@ -757,26 +752,26 @@ h2 {
   border-color: #ddd;
 }
 
-/* line 751, main.scss */
+/* line 748, main.scss */
 #choose {
   float: left;
   text-align: left;
   font-size: 11px;
 }
-/* line 755, main.scss */
+/* line 752, main.scss */
 #choose a {
   text-decoration: none;
   color: #748a42;
   text-transform: uppercase;
 }
 
-/* line 763, main.scss */
+/* line 760, main.scss */
 #fridge_wrp_step2 {
   width: 84%;
   margin-top: 30px;
   /*margin:0 auto;*/
 }
-/* line 767, main.scss */
+/* line 764, main.scss */
 #fridge_wrp_step2 .fridge_btn_cancel {
   width: 49%;
   display: inline;
@@ -788,7 +783,7 @@ h2 {
   font-size: 20px;
   cursor: pointer;
 }
-/* line 778, main.scss */
+/* line 775, main.scss */
 #fridge_wrp_step2 .fridge_btn_nxt {
   width: 49%;
   display: inline;
@@ -800,7 +795,7 @@ h2 {
   font-size: 20px;
 }
 
-/* line 791, main.scss */
+/* line 788, main.scss */
 #fridge_add_icons {
   display: none;
   position: absolute;
@@ -818,7 +813,7 @@ h2 {
   color: #fff;
 }
 
-/* line 808, main.scss */
+/* line 805, main.scss */
 #fade {
   display: none;
   position: fixed;
@@ -833,14 +828,14 @@ h2 {
   filter: alpha(opacity=70);
 }
 
-/* line 822, main.scss */
+/* line 819, main.scss */
 #fridge_select_txt {
   border-radius: 0px;
   display: inline-block;
   width: 80%;
 }
 
-/* line 829, main.scss */
+/* line 826, main.scss */
 #fridge_select_sort {
   float: none;
   text-align: center;
@@ -852,7 +847,7 @@ h2 {
 }*/
 /*********************************Media Query****************/
 @media (max-width: 640px) {
-  /* line 844, main.scss */
+  /* line 841, main.scss */
   #fridge_body {
     background: url("../images/fridge_mobile.png");
     background-size: 320px;
