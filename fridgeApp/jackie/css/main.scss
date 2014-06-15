@@ -145,8 +145,6 @@ float: right;
 margin-right:350px;
 margin-bottom: 36px;
 
-
-
 }
 
 
@@ -367,17 +365,7 @@ display: inline-block;
 
 /*********************************Fridge****************/
 
-#fridge-header {
-	background-color:$lightorange;
-	position:fixed;
-	top:0;
-	left:0;
-	width: 100%;
-	height: 44px;
-
-
-
-	#fridge_sort{
+.fridge_sort{
 		text-decoration:none;
 		text-align:left;
 		/*line-height: 3;*/
@@ -393,6 +381,15 @@ display: inline-block;
 			vertical-align:middle;
 		}
 	}
+
+#fridge-header {
+	background-color:$lightorange;
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 44px;
+
 
 	#fridge_sa{
 		line-height: 3;
@@ -422,12 +419,13 @@ display: inline-block;
 #fridge_body {
 	background:url('../images/fridge_pantry.png');
 	background-repeat: repeat-y;
-	 -webkit-background-size: 100%;
+	margin-top: 44px;
+	/* -webkit-background-size: 100%;
 	  -moz-background-size: 100% ;
-	  -o-background-size: 100%;
-	  background-size: 100%;
+	  -o-background-size: 100%;*/
+	  background-size: 640px;
 	  height:100%;
-	  margin-top: -40px;
+	  background-position: center;
 
 }
 
@@ -667,6 +665,8 @@ margin-top: 7px;
 
 	#fridge_add_step2{
 	display:none;
+	text-align:center;
+	margin-top: 70px;
 
 	h3{
 		color:$lightorange;
@@ -679,6 +679,186 @@ margin-top: 7px;
 	}
 }
 
+/*fridge_add_step2*/
+
+.itm_left {
+	float:left;
+	display:inline-block;
+}
+
+.itm_title {
+	text-transform:uppercase;
+	/*line-height:2;*/
+	text-align: left;
+/* line-height: 2; */
+	width: 125px;
+	font-size: 11px;
+
+}
+
+.itm_ans {
+	text-align:left;
+	margin-left: -10px;
+}
+
+/*.itm_right {
+	float:right;
+	display:inline-block;
+}*/
+
+#stp2_wrapper {
+	width:80%;
+	margin:0 auto;
+}
+
+#stp2_wrapper .itm_ans {
+	height: 18px;
+	width: auto;
+	margin-top:0px;
+	padding-left: 0px;
+}
+
+#itm_name_cat {
+	margin-left: 28px;
+	background: transparent;
+border: 0px;
+width: 97px;
+margin-left: 0px;
+
+option{
+	color:#ddd;
+}
+}
+
+#tag_container {
+	background-color: #fff;
+	width: 97px;
+	overflow: hidden;
+	background-image: url('../images/form_down.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	height: 26px;
+	padding-top: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	border: 1px;
+	border-style: solid;
+	border-color: #ddd;
+}
+
+#choose{
+	float:left;
+	text-align:left;
+	font-size:11px;
+	a {
+		text-decoration:none;
+		color:$green;
+		text-transform:uppercase;
+	}
+
+}
+
+	#fridge_wrp_step2 {
+		width:84%;
+		margin-top:30px;
+		/*margin:0 auto;*/
+		.fridge_btn_cancel{
+			width:49%;
+			display:inline;
+			background:transparent;
+			background-color:#eee;
+			color:#808080;
+			border:none;
+			padding:18px;
+			font-size:20px;
+			cursor:pointer;
+		}
+		.fridge_btn_nxt{
+			width:49%;
+			display:inline;
+			background:transparent;
+			background-color:$lightorange;
+			color:#fff;
+			border:none;
+			padding:18px;
+			font-size:20px;
+		}
+
+	}
+
+#fridge_add_icons{
+	display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;                 
+    padding: 10px;
+/*    border: 2px solid #FFF;*/
+    background: transparent;
+    z-index:1002;
+    overflow:visible;
+    color:#fff;
+}
+
+#fade{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+
+#fridge_select_txt{
+	border-radius: 0px;
+display: inline-block;
+width: 80%;
+
+}
+
+#fridge_select_sort {
+	float:none;
+	text-align:center;
+}
+
+/*#chosse_icon_lbl{
+	text-align:left;
+	float: left;
+}*/
+
+
+/*********************************Media Query****************/
+
+@media (max-width:640px) {
+
+	#fridge_body {
+	background:url('../images/fridge_mobile.png');
+	  background-size: 320px;
+	  background-repeat: repeat-y;
+	  background-position:center;
+	  background-attachment:fixed;
+	  margin-top: -36px;
+	  overflow:scroll;
+	  height:100%;
+
+	
+	}
+
+}
+
+
+
+/*********************************END Media Query****************/
 
 
 

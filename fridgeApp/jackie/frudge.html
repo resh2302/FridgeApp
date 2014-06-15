@@ -27,7 +27,7 @@
         <!-- <div class="back">
           <img src="images/black_back.png" alt="back">
         </div> -->
-      <ul id="fridge_sort" class="fridge_hide">
+      <ul class="fridge_sort fridge_hide">
         <li>ALL</li>
         <li>MEAT</li>
         <li>DAIRY</li>
@@ -58,6 +58,9 @@
    
 
     <div  id="fridge_body">
+      <ul>
+        <li></li>
+      </ul>
       
     </div> <!-- end fridge_body -->
 
@@ -112,9 +115,71 @@
 
 
      <div id="fridge_add_step2">
+      <form id="stp2_wrapper">
       <h3>ITEM SUMMARY</h3>
+      <div class="clear"></div>
+      <br/>  
+      <label for="itemName" class="itm_left itm_title">Item Name: </label>
+      <input type="text" name="itm_name_ans" class="itm_left itm_ans" placeholder="eg.Apple">
+      <br/>
+      <br/>
+      <label for="itemQuantity" class="itm_left itm_title">Quantity: </label>
+      <input type="text" name="itm_name_qut" class="itm_left itm_ans" placeholder="Enter quantity">
+      <br/>
+      <br/>
+      <label for="itemCat" class="itm_left itm_title">Category: </label>
+      <div id="tag_container">
+      <select class="itm_left itm_ans" id="itm_name_cat">
+      <option value="Meat">Meat</option>
+      <option value="Dairy">Dairy</option>
+      <option value="Veggie-fruit">Veggies/ Fruits</option>
+     </select>
+      </div>
+      <br/>
+      <br/>
+      <label for="itemEx" class="itm_left itm_title">Expiary: </label>
+      <input type="text" name="itm_name_exp" class="itm_left itm_ans" placeholder="dd/mm/yyyy">
+      <br/>
+      <br/>
+
+      <label for="itemSug" class="itm_left itm_title">Suggested Icon: </label>
+      <input type="text" name="itm_name_sug" class="itm_left itm_ans" placeholder="apple image">
+      <br/>
+      <br/>
+      <div class="clear"></div>
+      <p id="choose"><a href="#" onclick="lightbox_open();">Don't like this icon? Choose Your Icon</a></p>
+       <div class="clear"></div>
+      <div id="fridge_wrp_step2">
+      <button type="submit" id="fridge_add_can2" class="fridge_btn_cancel">
+          CANCEL
+      </button>
+      <button type="submit" id="fridge_add_done" class="fridge_btn_nxt">
+          DONE
+      </button>
+    </div> <!-- END fridge_wrp_step2 -->
+      
+      </form> <!-- end stp2_wrapper -->
 
     </div> <!-- END fridge_add_step2 -->
+
+    <div id="fridge_add_icons">
+
+      <form id="fridge_select_icon">
+        <label id="chosse_icon_lbl" for="selectIcon">CHOOSE YOUR ICON <i id="fridge_search_icon" class="fa fa-search fa-lg"></i></label>
+        <input type="text" name="fridge_select_txt" id="fridge_select_txt" placeholder="search">
+        
+      </form>
+      <div>
+      <ul class="fridge_sort" id="fridge_select_sort">
+        <li>ALL</li>
+        <li>MEAT</li>
+        <li>DAIRY</li>
+        <li>VEGGIE/ FRUIT</li>
+      </ul>
+    </div>
+      
+    </div> <!-- END fridge_add_icons -->
+    <div id="fade" onClick="lightbox_close();"></div> 
 
 
 
@@ -167,7 +232,7 @@
 
      $(document).ready(function(){
       $("#fridge_add_can1").click(function(){
-        $("#fridge_add, #fridge_add_step2").fadeOut(200);
+        $("#fridge_add, #fridge_add_step2, #fridge_add_icons").fadeOut(200);
         $("#fridge_body").slideDown(500);
 
       });
@@ -180,6 +245,21 @@
 
       });
     });
+
+    //function for lightbox in icon selection 
+
+    function lightbox_open(){
+    window.scrollTo(0,0);
+    document.getElementById('fridge_add_icons').style.display='block';
+    document.getElementById('fade').style.display='block';  
+    }
+
+    function lightbox_close(){
+    document.getElementById('fridge_add_icons').style.display='none';
+    document.getElementById('fade').style.display='none';
+    }
+
+
     </script>
 </body>
 </html>
