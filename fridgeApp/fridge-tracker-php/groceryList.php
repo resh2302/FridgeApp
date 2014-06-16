@@ -1,17 +1,17 @@
 <?php
 require_once 'checkSession.php';
- $refID = $_SESSION['refID'];
- 
-require_once './classes/groceryClass.php';
-    $gc = new groceryClass();
-    $GroceryFridge = $gc->getGrocerybyID();
-    
 require_once './classes/FridgeDB.php';   
 require_once './classes/Refrigerator.php';
 require_once './classes/FridgeFood.php';
 require_once './classes/FreezerFood.php';
 require_once 'FirePHPCore-0.3.2/lib/FirePHPCore/fb.php';
+require_once './classes/groceryClass.php';
 
+ $refID = $_SESSION['refID'];
+
+    $gc = new groceryClass();
+    $items = $gc->getGrocerybyFridgeID($refID);
+    
 
 ?>
 <html>
@@ -20,6 +20,7 @@ require_once 'FirePHPCore-0.3.2/lib/FirePHPCore/fb.php';
 	<link rel="stylesheet" href="./assets/stylesheets/demo.css" />
 	  <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+        
 </head>
 <body>
 	<header>
@@ -34,21 +35,36 @@ require_once 'FirePHPCore-0.3.2/lib/FirePHPCore/fb.php';
     	<h3>Refridgerator</h3>
     <div class="radio">
  <form method="POST" action="groceryList.php" >
-            <h3> Add food items </h3>
-           <input id="frd_list" type="radio" name="frd_list" value="frd_list">
-			<label for="frd_list"></label>
-			<input type="text" placeholder="work" />
-			<br/>
+           
                
                 <?php
-                    foreach ($InsertFridge as $groceryfridge)
+                $i =0; $j=0;
+                    foreach ($items as $gfItems)
                     {
-                       
+                    ?>
+                        <input type="radio" class="itemrad" name="item<?php echo $i++; ?>" value="<?php echo $gfItems['ID'] ?>" />
+                        <input type="text" class="itemtext" name="txtItem<?php echo $j++; ?>" value="<?php echo $gfItems['ItemName'] ?>" />
+                        <input type="button" class="btnDel" value="Delete" style="background: blue" />
+                            <?php
                     }
                 ?>
-            <input type="submit" value="Done" />
+         
+        </form>
         
-        
+        <form method="POST" action="insertgroceryfridge.php">
+            <h3> Add food items </h3>
+         
+           <input id="frd_list" type="radio" name="frd_list" value="frd_list">
+          <label for="frd_list"></label>
+          <input type="text" name="itemname" />
+<!--          <input type="hidden" name="fridgeid"/>-->
+			<br/>
+                        <input type="submit" value="Done" style="background: red"/>
+          
+                        
+                        
+                        
+                       
         </form>
 		
 			
@@ -63,7 +79,9 @@ require_once 'FirePHPCore-0.3.2/lib/FirePHPCore/fb.php';
 
 	</div>
 
-	
+	  <script src="./assets/javascripts/jquery.js"></script>
+          <script src="./js/groceryitem.js"></script>
+
 	
 
 
