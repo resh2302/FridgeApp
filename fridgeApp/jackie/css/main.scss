@@ -172,7 +172,7 @@ padding-top: 28px;
 	margin-top:10px;
 
 
-input[type=text]{
+input[type=text], input[type=password], input[type=email]{
 	height:44px;
 	width:80%;
 	border-radius: 30px;
@@ -224,7 +224,7 @@ input[type=text]{
    text-transform:uppercase;
 }
 
-input[type=submit]{
+input[type=submit], input[type=button]{
 	height:44px;
 	width:80%;
 	border-radius: 5px;
@@ -243,12 +243,12 @@ input[type=submit]{
 
 }
 
-input[type=submit]:hover{
+input[type=submit]:hover, input[type=button]:hover {
 	background-color:#fff;
 	color:$lightpink;
 }
 
-input[type=submit]:active{
+input[type=submit]:active, input[type=button]:active{
 	background-color:#fff;
 	color:$lightpink;
 }
@@ -299,7 +299,7 @@ h3 {
 	color:#fff;
 
 }
-input[type=text]{
+input[type=text], input[type=email], input[type=password] {
 	height:44px;
 	width:80%;
 	border-radius: 30px;
@@ -310,12 +310,12 @@ input[type=text]{
 
 }
 
-#reg-body input[type=submit]:hover{
+#reg-body input[type=submit]:hover, #reg-body input[type=button]:hover{
 	background-color:#fff;
 	color:$green;
 }
 
-#reg-body input[type=submit]:active{
+#reg-body input[type=submit]:active, #reg-body input[type=button]:active{
 	background-color:#fff;
 	color:$green;
 }
@@ -632,7 +632,7 @@ margin-top: 7px;
 	display:none;
 }
 
-#fridge_search_form input[type=text]{
+#fridge_search_form input[type=text], #fridge_search_form  input[type=password], #fridge_search_form input[type=email] {
 	width: 51%;
 	margin-top: 6px;
 	height: 30px;
@@ -665,7 +665,7 @@ margin-top: 7px;
 		font-weight: 200;
 	}
 
-	input[type=text]{
+	input[type=text], input[type=email], input[type=password]{
 		background-color:#eee;
 		border-radius:6px;
 		float: left;
@@ -954,6 +954,30 @@ width: 80%;
 	float: left;
 }*/
 
+#frd_itm_search{
+	ul{
+		li{
+		display:inline;
+	  	list-style-type:none;
+	  	margin-left: 5px;
+	  	img{
+	  		height: 57px;
+width: auto;
+vertical-align: middle;
+	  	}
+
+		}
+
+	}
+}
+
+/*********************************Over write isotope default style****************/
+
+
+.portfolioFilter a {
+font-size: 10px;
+color: #fff;
+}
 
 /*********************************Media Query****************/
 
@@ -985,8 +1009,8 @@ width: 80%;
 	  	margin-left: 0px;
 
 	  	.editSection{
-	  		width: 69px;
-			display:none;
+	  		width: 92px;
+			display: none;
 			.frd_item_delete{
 				font-size:10px;
 				padding:5px;

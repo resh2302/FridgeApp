@@ -166,7 +166,7 @@ h1 {
   margin-top: 10px;
 }
 /* line 175, main.scss */
-#login-body form input[type=text] {
+#login-body form input[type=text], #login-body form input[type=password], #login-body form input[type=email] {
   height: 44px;
   width: 80%;
   border-radius: 30px;
@@ -223,7 +223,7 @@ h1 {
 }
 
 /* line 227, main.scss */
-input[type=submit] {
+input[type=submit], input[type=button] {
   height: 44px;
   width: 80%;
   border-radius: 5px;
@@ -238,13 +238,13 @@ input[type=submit] {
 }
 
 /* line 246, main.scss */
-input[type=submit]:hover {
+input[type=submit]:hover, input[type=button]:hover {
   background-color: #fff;
   color: #e67365;
 }
 
 /* line 251, main.scss */
-input[type=submit]:active {
+input[type=submit]:active, input[type=button]:active {
   background-color: #fff;
   color: #e67365;
 }
@@ -299,7 +299,7 @@ h3 {
 }
 
 /* line 302, main.scss */
-input[type=text] {
+input[type=text], input[type=email], input[type=password] {
   height: 44px;
   width: 80%;
   border-radius: 30px;
@@ -310,13 +310,13 @@ input[type=text] {
 }
 
 /* line 313, main.scss */
-#reg-body input[type=submit]:hover {
+#reg-body input[type=submit]:hover, #reg-body input[type=button]:hover {
   background-color: #fff;
   color: #748a42;
 }
 
 /* line 318, main.scss */
-#reg-body input[type=submit]:active {
+#reg-body input[type=submit]:active, #reg-body input[type=button]:active {
   background-color: #fff;
   color: #748a42;
 }
@@ -637,7 +637,7 @@ h2 {
 }
 
 /* line 635, main.scss */
-#fridge_search_form input[type=text] {
+#fridge_search_form input[type=text], #fridge_search_form input[type=password], #fridge_search_form input[type=email] {
   width: 51%;
   margin-top: 6px;
   height: 30px;
@@ -678,7 +678,7 @@ h2 {
   font-weight: 200;
 }
 /* line 668, main.scss */
-#fridge_add form input[type=text] {
+#fridge_add form input[type=text], #fridge_add form input[type=email], #fridge_add form input[type=password] {
   background-color: #eee;
   border-radius: 6px;
   float: left;
@@ -966,9 +966,29 @@ h2 {
 	text-align:left;
 	float: left;
 }*/
+/* line 959, main.scss */
+#frd_itm_search ul li {
+  display: inline;
+  list-style-type: none;
+  margin-left: 5px;
+}
+/* line 963, main.scss */
+#frd_itm_search ul li img {
+  height: 57px;
+  width: auto;
+  vertical-align: middle;
+}
+
+/*********************************Over write isotope default style****************/
+/* line 977, main.scss */
+.portfolioFilter a {
+  font-size: 10px;
+  color: #fff;
+}
+
 /*********************************Media Query****************/
 @media (max-width: 640px) {
-  /* line 962, main.scss */
+  /* line 986, main.scss */
   #fridge_body {
     background: url("../images/fridge_mobile.png");
     background-size: 320px;
@@ -980,7 +1000,7 @@ h2 {
     height: 100%;
     /*ul*/
   }
-  /* line 973, main.scss */
+  /* line 997, main.scss */
   #fridge_body ul {
     position: relative;
     /* left: 500px; */
@@ -990,7 +1010,7 @@ h2 {
     margin: 0 auto;
     /*frd_items*/
   }
-  /* line 981, main.scss */
+  /* line 1005, main.scss */
   #fridge_body ul .frd_items {
     display: inline;
     list-style-type: none;
@@ -998,34 +1018,34 @@ h2 {
     margin-left: 0px;
     /*img*/
   }
-  /* line 987, main.scss */
+  /* line 1011, main.scss */
   #fridge_body ul .frd_items .editSection {
-    width: 69px;
+    width: 92px;
     display: none;
   }
-  /* line 990, main.scss */
+  /* line 1014, main.scss */
   #fridge_body ul .frd_items .editSection .frd_item_delete {
     font-size: 10px;
     padding: 5px;
   }
-  /* line 994, main.scss */
+  /* line 1018, main.scss */
   #fridge_body ul .frd_items .editSection .frd_item_edit {
     font-size: 10px;
     padding: 5px;
   }
-  /* line 999, main.scss */
+  /* line 1023, main.scss */
   #fridge_body ul .frd_items img {
     height: 62px;
     margin-bottom: 28px;
   }
 
   /*fridge_body*/
-  /* line 1009, main.scss */
+  /* line 1033, main.scss */
   #frd_frz {
     margin-top: 20px;
   }
 
-  /* line 1015, main.scss */
+  /* line 1039, main.scss */
   #frd {
     background: url("../images/fridge_icon.png");
     height: 220px;
@@ -1036,7 +1056,7 @@ h2 {
     margin-bottom: 10px;
   }
 
-  /* line 1027, main.scss */
+  /* line 1051, main.scss */
   #frd:hover, #frd:active {
     background: url("../images/fridge_icon_hover.png");
     height: 220px;
@@ -1047,7 +1067,7 @@ h2 {
     margin-bottom: 10px;
   }
 
-  /* line 1038, main.scss */
+  /* line 1062, main.scss */
   #frz {
     background: url("../images/freezer_icon.png");
     height: 200px;
@@ -1058,7 +1078,7 @@ h2 {
     margin-top: 10px;
   }
 
-  /* line 1049, main.scss */
+  /* line 1073, main.scss */
   #frz:hover, #frz:active {
     background: url("../images/freezer_icon_hover.png");
     height: 200px;
