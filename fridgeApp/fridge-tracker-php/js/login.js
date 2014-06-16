@@ -15,7 +15,7 @@ function login(){
         console.log("msg is : "+msg);
         if (msg == "success") {
             console.log("success");
-            window.location.href="myRefrigerator.php";
+            window.location.href="choice.php";
         }        
         else {
             console.log("fail");

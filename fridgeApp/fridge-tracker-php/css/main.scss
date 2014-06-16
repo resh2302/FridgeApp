@@ -1,4 +1,5 @@
 $red: #c25e4d;
+$brightred:#ff1d25;
 $lightpink:#e67365;
 $gray: #ccc;
 $green: #93a844;
@@ -7,6 +8,16 @@ $yellow: #e9cb5f;
 $lightorange:#fcc062;
 $lightgreen:#93a844;
 $green:#748a42;
+
+.hide{
+	display:none;
+}
+
+.important{
+	position:relative;
+	left:0px !important;
+
+}
 
 /*home*/
 .container {
@@ -145,8 +156,6 @@ float: right;
 margin-right:350px;
 margin-bottom: 36px;
 
-
-
 }
 
 
@@ -173,7 +182,7 @@ padding-top: 28px;
 	margin-top:10px;
 
 
-input[type=text], input[type=email], input[type=password]{
+input[type=text], input[type=password], input[type=email]{
 	height:44px;
 	width:80%;
 	border-radius: 30px;
@@ -244,12 +253,12 @@ input[type=submit], input[type=button]{
 
 }
 
-input[type=submit]:hover,input[type=button]:hover{
+input[type=submit]:hover, input[type=button]:hover {
 	background-color:#fff;
 	color:$lightpink;
 }
 
-input[type=submit]:active,input[type=button]:active{
+input[type=submit]:active, input[type=button]:active{
 	background-color:#fff;
 	color:$lightpink;
 }
@@ -267,12 +276,7 @@ input[type=submit]:active,input[type=button]:active{
 	height: 20px;
 }
 
-
 /*********************************Register****************/
-
-label.errorMsg{
-	display:block;
-}
 .back {
 	display:inline-block;
 		
@@ -305,7 +309,7 @@ h3 {
 	color:#fff;
 
 }
-input[type=text], input[type=email], input[type=password]{
+input[type=text], input[type=email], input[type=password] {
 	height:44px;
 	width:80%;
 	border-radius: 30px;
@@ -316,12 +320,12 @@ input[type=text], input[type=email], input[type=password]{
 
 }
 
-#reg-body input[type=submit]:hover{
+#reg-body input[type=submit]:hover, #reg-body input[type=button]:hover{
 	background-color:#fff;
 	color:$green;
 }
 
-#reg-body input[type=submit]:active{
+#reg-body input[type=submit]:active, #reg-body input[type=button]:active{
 	background-color:#fff;
 	color:$green;
 }
@@ -371,18 +375,67 @@ display: inline-block;
 }
 
 /*********************************Fridge****************/
+#frd_frz{
+	margin-top:50px;
 
-#fridge-header {
-	background-color:$lightorange;
-	position:fixed;
-	top:0;
-	left:0;
-	width: 100%;
-	height: 44px;
+}
+
+#frd-or{
+	font-size:14px;
+	color:#999;
+	margin-top:10px;
+	margin-bottom:-10px;
+	img{
+
+	margin: 0px;
+	}
+}
+#frd{
+	background:url('../images/fridge_icon.png');
+	height:220px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 150px;
+	cursor:pointer;
+	margin-bottom: 30px;
 
 
+}
 
-	#fridge_sort{
+#frd:hover, #frd:active{
+	background:url('../images/fridge_icon_hover.png');
+	height:220px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 150px;
+	cursor:pointer;
+	margin-bottom: 30px;
+
+}
+
+#frz {
+	background:url('../images/freezer_icon.png');
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 150px;
+	cursor:pointer;
+	margin-top: 30px;
+
+}
+
+#frz:hover, #frz:active{
+	background:url('../images/freezer_icon_hover.png');
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 150px;
+	cursor:pointer;
+	margin-top: 30px;
+
+}
+
+.fridge_sort{
 		text-decoration:none;
 		text-align:left;
 		/*line-height: 3;*/
@@ -398,6 +451,16 @@ display: inline-block;
 			vertical-align:middle;
 		}
 	}
+
+#fridge-header {
+	// display:none;
+	background-color:$lightorange;
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 44px;
+
 
 	#fridge_sa{
 		line-height: 3;
@@ -425,21 +488,83 @@ display: inline-block;
 }
 
 #fridge_body {
+
+	// display:none;
 	background:url('../images/fridge_pantry.png');
 	background-repeat: repeat-y;
-	 -webkit-background-size: 100%;
+	margin-top: -77px;
+	/* -webkit-background-size: 100%;
 	  -moz-background-size: 100% ;
-	  -o-background-size: 100%;
-	  background-size: 100%;
+	  -o-background-size: 100%;*/
+	  background-size: 640px;
 	  height:100%;
-	  margin-top: -40px;
+	  background-position: center top;
+	  /*background-color:#d3d3d3;*/
 
-	  img{
-	  	cursor: pointer;
+	  	
+
+	  ul{
+	  	position: relative;
+		/* left: 500px; */
+		top: 152px;
+		/*margin-bottom: 0px;*/
+		width: 640px;
+		margin: 0 auto;
+
+	  .frd_items{
+	  	display: inline-block;
+		list-style-type: none;
+		width: 160px;
+		p{
+	  		position: absolute;
+			top: 0;
+			margin-top: 98px;
+			margin-left: 38px;
+	  	}
+
+	  	.editSection{
+	  		display:inline-block;
+	  		position:absolute;
+	  		margin-left: -67px;
+			margin-top: 34px;
+			display:none;
+			width: 120px;
+			.frd_item_delete{
+				background-color:$brightred;
+				color:#fff;
+				padding:10px;
+				border-top-left-radius: 5px;
+				border-bottom-left-radius: 5px;
+			}
+			.frd_item_edit{
+				background-color:#f2f2f2;
+				color:#4d4d4d;
+				padding:10px;
+				margin-left: -4px;
+				border-bottom-right-radius: 5px;
+				border-top-right-radius: 5px;
+			}
+	  	}
+	  /*	span{
+	  		
+			left: 20;
+			margin-left: -50px;
+			margin-top: 35px;
+			img{
+				width: 39px;
+				height: auto;
+			}
+
+	  	}*/
+	  
+	  	img{
+	  		height: 100px;
+	  		margin-bottom: 84px;
+	  		cursor:pointer;
+	  	}
 	  }
-	  .editSection{
-	  	display: none;
-	  }
+	}
+
 }
 
 .fridge_footer{
@@ -461,7 +586,7 @@ display: inline-block;
 		vertical-align: middle;
 		padding-top:5px;
 		padding-bottom:5px;
-		margin-left:25px;
+		margin-left:15px;
 		img {
 			width: 35px;
 			vertical-align: middle;
@@ -524,7 +649,7 @@ margin-top: 7px;
 	display:none;
 }
 
-#fridge_search_form input[type=text]{
+#fridge_search_form input[type=text], #fridge_search_form  input[type=password], #fridge_search_form input[type=email] {
 	width: 51%;
 	margin-top: 6px;
 	height: 30px;
@@ -541,9 +666,6 @@ margin-top: 7px;
 	}
 }
 
-#fridge_body{
-	/*display:none;*/
-}
 
 #fridge_add{
 	margin-top:60px;
@@ -560,7 +682,7 @@ margin-top: 7px;
 		font-weight: 200;
 	}
 
-	input[type=text]{
+	input[type=text], input[type=email], input[type=password]{
 		background-color:#eee;
 		border-radius:6px;
 		float: left;
@@ -678,6 +800,8 @@ margin-top: 7px;
 
 	#fridge_add_step2{
 	display:none;
+	text-align:center;
+	margin-top: 70px;
 
 	h3{
 		color:$lightorange;
@@ -690,9 +814,352 @@ margin-top: 7px;
 	}
 }
 
+/*fridge_add_step2*/
+
+.itm_left {
+	float:left;
+	display:inline-block;
+}
+
+.itm_title {
+	text-transform:uppercase;
+	/*line-height:2;*/
+	text-align: left;
+/* line-height: 2; */
+	width: 125px;
+	font-size: 11px;
+
+}
+
+.itm_ans {
+	text-align:left;
+	margin-left: -10px;
+}
+
+/*.itm_right {
+	float:right;
+	display:inline-block;
+}*/
+
+#stp2_wrapper {
+	width:80%;
+	margin:0 auto;
+}
+
+#stp2_wrapper .itm_ans {
+	height: 18px;
+	width: auto;
+	margin-top:0px;
+	padding-left: 0px;
+}
+
+#itm_name_cat {
+	margin-left: 28px;
+	background: transparent;
+border: 0px;
+width: 97px;
+margin-left: 0px;
+
+option{
+	color:#ddd;
+}
+}
+
+#tag_container {
+	background-color: #fff;
+	width: 97px;
+	overflow: hidden;
+	background-image: url('../images/form_down.png');
+	background-repeat: no-repeat;
+	background-position: 95% center;
+	height: 26px;
+	padding-top: 4px;
+	-webkit-box-sizing: border-box;
+	-moz-box-sizing: border-box;
+	box-sizing: border-box;
+	padding: 5px 10px;
+	border: 1px;
+	border-style: solid;
+	border-color: #ddd;
+}
+
+#choose{
+	float:left;
+	text-align:left;
+	font-size:11px;
+	a {
+		text-decoration:underline;
+		color:$green;
+		text-transform:uppercase;
+	}
+
+}
+
+	#fridge_wrp_step2 {
+		width:84%;
+		margin-top:30px;
+		/*margin:0 auto;*/
+		.fridge_btn_cancel{
+			width:49%;
+			display:inline;
+			background:transparent;
+			background-color:#eee;
+			color:#808080;
+			border:none;
+			padding:18px;
+			font-size:20px;
+			cursor:pointer;
+		}
+		.fridge_btn_nxt{
+			width:49%;
+			display:inline;
+			background:transparent;
+			background-color:$lightorange;
+			color:#fff;
+			border:none;
+			padding:18px;
+			font-size:20px;
+		}
+
+	}
+
+#fridge_add_icons{
+	display: none;
+    position: absolute;
+    top: 30%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;                 
+    padding: 10px;
+/*    border: 2px solid #FFF;*/
+    background: transparent;
+    z-index:1002;
+    overflow:visible;
+    color:#fff;
+}
+
+#fade{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+
+#fridge_select_txt{
+	border-radius: 0px;
+display: inline-block;
+width: 80%;
+
+}
+
+#fridge_select_sort {
+	float:none;
+	text-align:center;
+}
+
+/*#chosse_icon_lbl{
+	text-align:left;
+	float: left;
+}*/
+
+#frd_itm_search{
+	ul{
+		li{
+		display:inline;
+	  	list-style-type:none;
+	  	margin-left: 5px;
+	  	img{
+	  		height: 57px;
+width: auto;
+vertical-align: middle;
+	  	}
+
+		}
+
+	}
+}
+
+/*********************************Over write isotope default style****************/
+
+
+.portfolioFilter a {
+font-size: 10px;
+color: #fff;
+}
+
+/*********************************Over write jquery ui default style****************/
+
+.ui-corner-all {
+	z-index:9999;
+}
+
+.ui-menu .ui-menu-item {
+	text-align:left;
+}
+
+.ui-autocomplete .ui-menu-item a:hover {
+  background:$lightorange;
+  border:none;
+}
+
+/*********************************Media Query****************/
+
+@media (max-width:640px) {
+
+	#fridge_body {
+	background:url('../images/fridge_mobile.png');
+	  background-size: 320px;
+	  background-repeat: repeat-y;
+	  background-position: center top;
+	  /*background-attachment:fixed;*/
+	 margin-top: -17px;
+	 /* overflow:scroll;*/
+	  height:100%;
+
+
+	  ul{
+	  	position: relative;
+		/* left: 500px; */
+		top: 67px;
+		/*margin-bottom: 0px;*/
+		width: 320px;
+		margin: 0 auto;
+
+	  .frd_items{
+	  	display:inline-block;
+	  	list-style-type:none;
+	  	width: 101px;
+	  	margin-left: 0px;
+
+	  	
+
+	  	.editSection{
+	  		width: 102px;
+			z-index: 9999;
+			display: none;
+			.frd_item_delete{
+				font-size:10px;
+				padding:5px;
+			}
+			.frd_item_edit{
+				font-size:10px;
+				padding:5px;
+			}
+	  	}
+	  	img{
+	  		height: 62px;
+	  		margin-bottom: 28px;
+	  	}/*img*/
+	  }/*frd_items*/
+	}/*ul*/
+
+	
+	} /*fridge_body*/
+
+#frd_frz{
+	margin-top:20px;
+
+}
+
+
+#frd{
+	background:url('../images/fridge_icon.png');
+	height:220px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 85px;
+	cursor:pointer;
+	margin-bottom: 10px;
+
+
+}
+
+#frd:hover, #frd:active{
+	background:url('../images/fridge_icon_hover.png');
+	height:220px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 85px;
+	cursor:pointer;
+	margin-bottom: 10px;
+
+}
+
+#frz {
+	background:url('../images/freezer_icon.png');
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 85px;
+	cursor:pointer;
+	margin-top: 10px;
+
+}
+
+#frz:hover, #frz:active{
+	background:url('../images/freezer_icon_hover.png');
+	height:200px;
+	background-repeat:no-repeat;
+	background-position:center;
+	background-size: 85px;
+	cursor:pointer;
+	margin-top: 10px;
+
+}
+
+}/*media query*/
 
 
 
+/*********************************END Media Query****************/
+
+
+/***** REshma ****/
+#form_add{
+	label.errorMsg:nth-child(odd){
+		display: block;
+	}
+}
+
+ #fridge-edit-header, #choice-header{
+ 	background-color:$lightorange;
+	position:fixed;
+	top:0;
+	left:0;
+	width: 100%;
+	height: 44px;
+	h3, h2{
+		
+		text-transform: uppercase;
+		font-weight: bold;
+		color: #fff;
+	}
+	h3{
+		display: inline-block;
+		margin-top: 0;
+		position: absolute;
+		top: 10px;
+	}
+ }
+
+ #editor{
+ 	#fridge_add_step2{
+ 	display:block; 		
+ 	}
+
+ 	.icon-edit{
+ 		float: left;
+ 	}
+ }
 
 
 

@@ -61,3 +61,29 @@ $('#login_form').validate({
       login();
     }
 });
+
+
+    $('#form_add').validate({
+        errorClass: "errorMsg",
+        rules: {
+            fridge_food_name: {
+                required: true
+            },
+            fridge_food_expiary: {
+                required: true
+            }        
+        },
+        messages: {
+            fridge_food_name: {
+                required: "Please enter food name."
+            },
+            fridge_food_expiary: {
+                required: "Please enter expiry date."
+            }
+        },
+        submitHandler: function() {
+          //
+
+        }
+    });
+
