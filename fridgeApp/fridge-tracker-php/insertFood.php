@@ -11,7 +11,7 @@ $qty = $_GET["itm_name_qut"];
 $cat = $_GET["itm_name_cat"];
 $date = $_GET["itm_name_exp"];
 $img = $_GET["imgurl-insert"];
-$mac = $_GET['imgurl-insert'];
+$mac = $_GET['mac'];
 
 FB::log($mac. " ".$name);
 

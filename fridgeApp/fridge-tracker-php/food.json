@@ -1,0 +1,266 @@
+{
+    "items": [
+      {
+        "image": "images/food/apple.png",
+        "names": {
+          "name": [
+            "apple",
+            "apple2"
+          ]
+        },
+        "category": "fruit"
+      },
+      {
+        "image": "images/food/beetroot.png",
+        "names": {
+          "name": [
+            "beetroot"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/berries.png",
+        "names": {
+          "name": [
+            "blue berries",
+            "berries"
+          ]
+        },
+        "category": "fruit"
+      },
+      {
+        "image": "images/food/brinjal.png",
+        "names": {
+          "name": [
+            "egg plant",
+            "brinjal"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/cherries.png",
+        "names": {
+          "name": [
+            "cherries",
+            "cherry"
+          ]
+        },
+        "category": "fruit"
+      },
+      {
+        "image": "images/food/broccoli.png",
+        "names": {
+          "name": [
+            "broccoli"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/carrot.png",
+        "names": {
+          "name": [
+            "carrot"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/cauliflower.png",
+        "names": {
+          "name": [
+            "cauliflower"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/celery.png",
+        "names": {
+          "name": [
+            "celery"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/cheese.png",
+        "names": {
+          "name": [
+            "cheese"
+          ]
+        },
+        "category": "dairy"
+      },
+      {
+        "image": "images/food/fish.png",
+        "names": {
+          "name": [
+            "fish",
+            "seafood"
+          ]
+        },
+        "category": "meat"
+      },
+      {
+        "image": "images/food/greenpeas.png",
+        "names": {
+          "name": [
+            "pease",
+            "green peas",
+            "greenpeas"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/icecream.png",
+        "names": {
+          "name": [
+            "icecream"
+          ]
+        },
+        "category": "dairy"
+      },
+      {
+        "image": "images/food/fruit.png",
+        "names": {
+          "name": [
+            "melon"
+          ]
+        },
+        "category": "fruit"
+      },
+      {
+        "image": "images/food/leafveg.png",
+        "names": {
+          "name": [
+            "leaf",
+            "leaves",
+            "spincah"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/meat.png",
+        "names": {
+          "name": [
+            "beef",
+            "steak"
+          ]
+        },
+        "category": "meat"
+      },
+      {
+        "image": "images/food/milk.png",
+        "names": {
+          "name": [
+            "milk"
+          ]
+        },
+        "category": "dairy"
+      },
+      {
+        "image": "images/food/mushroom.png",
+        "names": {
+          "name": [
+            "mushroom"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/orange.png",
+        "names": {
+          "name": [
+            "orange",
+            "grapefruit"
+          ]
+        },
+        "category": "fruit"
+      },
+      {
+        "image": "images/food/pear.png",
+        "names": {
+          "name": [
+            "pear"
+          ]
+        },
+        "category": "fruit"
+      },
+      {
+        "image": "images/food/redpepper.png",
+        "names": {
+          "name": [
+            "red pepper",
+            "pepper",
+            "bell pepper"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/sausage.png",
+        "names": {
+          "name": [
+            "sausage"
+          ]
+        },
+        "category": "meat"
+      },
+      {
+        "image": "images/food/shrimp.png",
+        "names": {
+          "name": [
+            "shrimp"
+          ]
+        },
+        "category": "meat"
+      },
+      {
+        "image": "images/food/watermelon.png",
+        "names": {
+          "name": [
+            "water melon",
+            "melon"
+          ]
+        },
+        "category": "fruit"
+      },
+      {
+        "image": "images/food/greenpepper.png",
+        "names": {
+          "name": [
+            "green pepper",
+            "green bell pepper",
+            "bell pepper"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/yellowpepper.png",
+        "names": {
+          "name": [
+            "yellow pepper",
+            "yellow bell pepper",
+            "bell pepper"
+          ]
+        },
+        "category": "veg"
+      },
+      {
+        "image": "images/food/yogurt.png",
+        "names": {
+          "name": [
+            "yogurt",
+            "curd"
+          ]
+        },
+        "category": "dairy"
+      }
+    ]
+}

@@ -7,6 +7,9 @@ require_once './classes/FridgeFood.php';
 require_once './classes/FreezerFood.php';
 require_once 'FirePHPCore-0.3.2/lib/FirePHPCore/fb.php';
 
+$string = file_get_contents("food.json");
+$list_a= json_decode($string, true);
+
 $id = $_GET['id'];
 $mac = $_GET['mac'];
 
@@ -14,10 +17,13 @@ if($mac == "fridge")
 {
   $objFridgeFood = new FridgeFood();
   $food = $objFridgeFood->getFoodbyFridge($id);
+  $fid = $food[0]['FridgeID'];
 }
 else{
   $objFreezerFood = new FreezerFood();
   $food = $objFreezerFood->getFoodbyFreezer($id);
+  $fid = $food[0]['FreezerID'];
+
 }
 
 FB::log($food);
@@ -97,6 +103,9 @@ FB::log($food);
                 echo $ff['Category'];
               ?>
             </p>
+          <input type="hidden" name="mac" id="mac" value="<?php echo $mac; ?>">
+          <input type="hidden" name="FID" id="FID" value="<?php echo $fid; ?>">
+
             <span>
               <?php
                 $now =time(); // or your date as well
@@ -170,6 +179,7 @@ FB::log($food);
       <h3>ITEM SUMMARY</h3>
       <div class="clear"></div>
       <br/>  
+      <input type="hidden" name="mac" value="<?php echo $mac; ?>">
       <label for="itemName" class="itm_left itm_title">Item Name: </label>
       <input type="text" name="itm_name_ans" id="itm_name_ans" class="itm_left itm_ans" >
       <br/>
@@ -195,8 +205,8 @@ FB::log($food);
       <br/>
 
       <label for="itemSug" class="itm_left itm_title">Suggested Icon: </label>
-      <img src="images/food/apple.png" height="122" width="123" class="itm_left icon-insert">
-      <input type="hidden" id="imgurl-insert" name="imgurl-insert" value="images/food/apple.png">
+      <img src="images/food/cover.png" width="122" class="itm_left icon-insert">
+      <input type="hidden" id="imgurl-insert" name="imgurl-insert" value="images/food/cover.png">
       <br/>
       <br/>
       <div class="clear"></div>
@@ -231,12 +241,32 @@ FB::log($food);
       </div>
       <div id="frd_itm_search">
         <ul class="portfolioContainer">
-          <li class="vf"><img src="images/items/beetroot.png"></li>
+          <!-- <li class="vf"><img src="images/items/beetroot.png"></li>
           <li class="meat"><img src="images/items/chicken.png"></li>
           <li class="meat"><img src="images/items/fish.png"></li>
           <li class="dairy"><img src="images/items/milk.png"></li>
           <li class="meat"><img src="images/items/sausage.png"></li>
-           <li class="meat"><img src="images/items/shrimp.png"></li>
+          <li class="meat"><img src="images/items/shrimp.png"></li>-->
+          <?php
+
+              foreach ($list_a['items'] as $li) {
+          ?>
+                <li class="<?php echo $li['category']; ?>"><img src="<?php echo $li['image']; ?>">
+
+          <?php
+                foreach ($li['names']['name'] as $name) {
+          ?>
+            <p class="hide">
+              <?php echo $name; ?>"
+            </p>
+          <?php
+                }
+          ?>
+              </li>
+
+          <?php
+              }
+          ?>
         </ul>
       </div>
 
