@@ -488,7 +488,7 @@ function debounce( fn, threshold ) {
           $('#imgurl-insert').attr('value',newsrc);
        });
 
-<<<<<<< HEAD
+
 
 
        /* $('#fridge_add_done').click(function(e){
@@ -525,9 +525,8 @@ function debounce( fn, threshold ) {
             // }
         });
         });*/
-=======
-       
->>>>>>> FETCH_HEAD
+
+
     });
 
      //Onclick of food icon, edit delete button slide down
