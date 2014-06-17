@@ -80,7 +80,7 @@ require_once './classes/groceryClass.php';
 	</div>
 
 	  <script src="./assets/javascripts/jquery.js"></script>
-          <script src="./js/groceryitem.js"></script>
+          <script src="./js/freezeritem.js"></script>
 
 	
 

@@ -3,7 +3,10 @@
 <html>
 <head>
 	<title>Grocery list</title>
+        <link rel="stylesheet" href="./assets/stylesheets/demo.css" />
+	  <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" />
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+	
 </head>
 <body id="gl_body">
 	<div id="gl_splash_wrapper">
