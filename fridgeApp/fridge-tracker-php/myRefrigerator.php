@@ -95,9 +95,11 @@ FB::log($food);
             //dairy            
     		?>
     			<li class="element-item frd_items <?php echo $ff['Category']; ?>"> <!-- vf from db -->
-    				<p class="hide"><?php
+    				<p class="hide">
+              <?php
               echo $ff['Name'];
-            ?></p>
+            ?>
+          </p>
             <p class="hide">
               <?php
                 echo $ff['Category'];
@@ -486,6 +488,7 @@ function debounce( fn, threshold ) {
           $('#imgurl-insert').attr('value',newsrc);
        });
 
+<<<<<<< HEAD
 
 
        /* $('#fridge_add_done').click(function(e){
@@ -522,6 +525,9 @@ function debounce( fn, threshold ) {
             // }
         });
         });*/
+=======
+       
+>>>>>>> FETCH_HEAD
     });
 
      //Onclick of food icon, edit delete button slide down
