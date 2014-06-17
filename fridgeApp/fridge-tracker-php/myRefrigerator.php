@@ -279,7 +279,7 @@ FB::log($food);
     <footer class="fridge_footer">
       <ul>
         <li>
-          <a href="#">
+          <a href="logout.php">
             <i class="fa fa-power-off fa-2x"></i>
             <p>Logout</p>
           </a>
@@ -291,7 +291,7 @@ FB::log($food);
           </a>
         </li>
         <li>
-          <a href="#">
+          <a href="groceryChoice.php">
             <img src="images/footer_list.png" alt="grocery list">
             <p>Grocery</p>
           </a>
