@@ -108,7 +108,7 @@ FB::log($food);
           <input type="hidden" name="mac" id="mac" value="<?php echo $mac; ?>">
           <input type="hidden" name="FID" id="FID" value="<?php echo $fid; ?>">
 
-            <span>
+            <span id="expirary_indicat">
               <?php
                 $now =time(); // or your date as well
                $your_date = strtotime( $ff['ExpiryDate']);
@@ -228,11 +228,11 @@ FB::log($food);
     </div> <!-- END fridge_add_step2 -->
 <div id="fridge_add_icons">
 
-      <form id="fridge_select_icon">
+    <!--   <form id="fridge_select_icon">
         <label id="chosse_icon_lbl" for="selectIcon">CHOOSE YOUR ICON <i id="fridge_search_icon" class="fa fa-search fa-lg"></i></label>
         <input type="text" name="fridge_select_txt" id="fridge_select_txt" placeholder="search">
         
-      </form>
+      </form> -->
       <div>
       <ul class="fridge_sort portfolioFilter" id="fridge_select_sort" >
         <li><a href="#" data-filter="*">ALL</a></li>
@@ -253,7 +253,7 @@ FB::log($food);
 
               foreach ($list_a['items'] as $li) {
           ?>
-                <li class="<?php echo $li['category']; ?>"><img src="<?php echo $li['image']; ?>">
+                <li class="test123 <?php echo $li['category']; ?>"><img src="<?php echo $li['image']; ?>">
 
           <?php
                 foreach ($li['names']['name'] as $name) {
@@ -278,7 +278,7 @@ FB::log($food);
 
     <footer class="fridge_footer">
       <ul>
-        <li>
+        <li id="footer_sign_out">
           <a href="logout.php">
             <i class="fa fa-power-off fa-2x"></i>
             <p>Logout</p>
@@ -381,33 +381,33 @@ function debounce( fn, threshold ) {
 }
 //////////////////////isotope////////////////////////////////////  
 
-//    $(window).load(function(){
-//     var $container = $('.portfolioContainer');
-//     $container.isotope({
-//         filter: '*',
-//         animationOptions: {
-//             duration: 750,
-//             easing: 'linear',
-//             queue: false
-//         }
-//     });
+   $(window).load(function(){
+    var $container = $('.portfolioContainer');
+    $container.isotope({
+        filter: '*',
+        animationOptions: {
+            duration: 750,
+            easing: 'linear',
+            queue: false
+        }
+    });
  
-//     $('.portfolioFilter a').click(function(){
-//         $('.portfolioFilter .current').removeClass('current');
-//         $(this).addClass('current');
+    $('.portfolioFilter a').click(function(){
+        $('.portfolioFilter .current').removeClass('current');
+        $(this).addClass('current');
  
-//         var selector = $(this).attr('data-filter');
-//         $container.isotope({
-//             filter: selector,
-//             animationOptions: {
-//                 duration: 750,
-//                 easing: 'linear',
-//                 queue: false
-//             }
-//          });
-//          return false;
-//     }); 
-// });
+        var selector = $(this).attr('data-filter');
+        $container.isotope({
+            filter: selector,
+            animationOptions: {
+                duration: 750,
+                easing: 'linear',
+                queue: false
+            }
+         });
+         return false;
+    }); 
+});
    //////////////////////////////////// //END isotope//////////////////////////////////// 
 
 
@@ -461,13 +461,14 @@ function debounce( fn, threshold ) {
       });
     });
 
+//disable lightbox
      $(document).ready(function(){
-     /* $("#fridge_add_nxt").click(function(){
-        $("#fridge_add").fadeOut(200);
+      $(".test123").click(function(){
+        $("#fade, #fridge_add_icons").fadeOut(200);
         $("#fridge_add_step2").show(500);
 
       });
- */
+
        $('#fridge_add_nxt').click(function(){
          if($('#form_add').valid())
          {
@@ -479,13 +480,53 @@ function debounce( fn, threshold ) {
 
       });
 
+
+
         $('#frd_itm_search img').click(function(){
           newsrc = $(this).attr('src');
           $('.icon-insert').attr('src',newsrc);
           $('#imgurl-insert').attr('value',newsrc);
        });
 
-       
+
+
+
+       /* $('#fridge_add_done').click(function(e){
+          e.preventDefault();
+
+          name = $("#itm_name_ans").val();
+          qty = $("itm_name_qut").val();
+          cat = $("itm_name_cat").val();
+          date = $("itm_name_exp").val();
+          img = $("imgurl-insert").val();
+          mac = $("imgurl-insert").val();
+
+          $.ajax({
+            type: "POST",
+            url: "insertFood.php",
+            data: {
+                  name: name,
+                  qty: qty,
+                  cat: cat,
+                  date: date,
+                  img: img,
+                  mac: mac
+                    } 
+        })
+        .done(function(response) {
+            console.log("response  "+response);
+            // if(response)
+            // {
+            //     console.log(" here : "+response);
+            //     $("#fridge_body").load('myRefrigerator.php');
+            // }
+            // else{
+            //     console.log("insert failed");
+            // }
+        });
+        });*/
+
+
     });
 
      //Onclick of food icon, edit delete button slide down
@@ -518,6 +559,10 @@ function debounce( fn, threshold ) {
      //add important when search
 
     $( ".element-item" ).addClass( "important" );
+
+    //showall
+
+    $( ".portfolioContainer" ).addClass( "showall" );
 
     </script>
 </body>

@@ -19,7 +19,12 @@ $lightred:#ef703e;
 .important{
 	position:relative;
 	left:0px !important;
+	top:0px !important;
 
+}
+
+.showall{
+	height: 1000px !important;
 }
 
 /*home*/
@@ -504,6 +509,19 @@ display: inline-block;
 	  background-position: center top;
 	  /*background-color:#d3d3d3;*/
 
+	  #expirary_indicat{
+	  	background-color: $lightpink;
+border-radius: 50px;
+/* width: 35px; */
+padding: 0px 6px;
+color: #fff;
+text-align: middle;
+text-align: center;
+/* vertical-align: middle; */
+position: absolute;
+margin-left: 8px;
+	  }
+
 	  	
 
 	  ul{
@@ -517,7 +535,7 @@ display: inline-block;
 	  .frd_items{
 	  	display: inline-block;
 		list-style-type: none;
-		width: 160px;
+		width: 203px;
 		p{
 	  		position: absolute;
 			top: 0;
@@ -531,7 +549,7 @@ display: inline-block;
 	  		margin-left: -67px;
 			margin-top: 34px;
 			display:none;
-			width: 120px;
+			width: 125px;
 			.frd_item_delete{
 				background-color:$brightred;
 				color:#fff;
@@ -562,7 +580,7 @@ display: inline-block;
 	  
 	  	img{
 	  		height: 100px;
-	  		margin-bottom: 84px;
+	  		margin-bottom: 71px;
 	  		cursor:pointer;
 	  	}
 	  }
@@ -578,10 +596,23 @@ display: inline-block;
 	width: 100%;
 /*	min-height:50px;*/
 
+
+
 	ul{
 		list-style-type: none;
 		text-align:center;
 		margin-bottom: 0px;
+
+	#footer_sign_out{
+		height: 32px;
+		a{
+			color:#999;
+
+			p{
+				margin-top: 0px;
+			}
+		}
+	}
 
 		
 	li{display: inline-block;
@@ -671,6 +702,14 @@ margin-top: 7px;
 
 
 #fridge_add{
+
+	.ui-datepicker-trigger{
+		margin-top: 20px;
+background: transparent;
+border: none;
+color: $lightorange;
+float: left;
+	}
 	margin-top:60px;
 	display:none;
 	form{
@@ -694,7 +733,7 @@ margin-top: 7px;
 	}
 
 	#fridge_food_expiary{
-		width:80%;
+		width:77%;
 	}
 
 	#fridge_btn_ex {
@@ -775,7 +814,7 @@ margin-top: 7px;
 
 	#fridge_add_step1 {
 		width:84%;
-		margin:0 auto;
+		margin: 31px auto;
 		.fridge_btn_cancel{
 			width:49%;
 			display:inline;
@@ -1139,7 +1178,7 @@ input[type=text]{
 	  .frd_items{
 	  	display:inline-block;
 	  	list-style-type:none;
-	  	width: 101px;
+	  	width: 143px;
 	  	margin-left: 0px;
 
 	  	
@@ -1158,8 +1197,8 @@ input[type=text]{
 			}
 	  	}
 	  	img{
-	  		height: 62px;
-	  		margin-bottom: 28px;
+	  		height: 60px;
+	  		margin-bottom: 23px;
 	  	}/*img*/
 	  }/*frd_items*/
 	}/*ul*/
