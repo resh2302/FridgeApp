@@ -1,6 +1,6 @@
 $(".freezertext").focusout(function(){
    itemname = $(this).val();
-   id = $(this).prev('.itemrad').val();
+   id = $(this).prev('.freezerrad').val();
    console.log(itemname + " " + id);
 
         $.ajax({
@@ -23,7 +23,7 @@ $(".freezertext").focusout(function(){
 });
 
 $(".btnDel").click(function(){
-   id = $(this).prevAll('.itemrad').val();
+   id = $(this).prevAll('.freezerrad').val();
 
 
         $.ajax({
