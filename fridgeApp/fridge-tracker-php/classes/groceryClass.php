@@ -19,9 +19,9 @@ class groceryClass{
             $stm=$db->prepare($q);
 //            $stm->bindParam(':id',$id);
             $stm->bindParam(':itemname',$itemname);
-      $stm->bindParam(':fridgeid',$fridgeid);
-           $row= $stm->execute();
-           return $row;
+            $stm->bindParam(':fridgeid',$fridgeid);
+            $row= $stm->execute();
+            return $row;
         }
         
              public function updateFridge($id, $itemname)
@@ -34,7 +34,20 @@ class groceryClass{
                 $row = $stm->execute();
                 return $row;
         }
-             public function deleteFridge($id)
+
+        public function updateStatus($id)
+        {
+                $status = "complete";
+                $db = FridgeDB::getDB();
+                $q = "UPDATE GroceryFridge SET status = :status WHERE ID = :id";
+                $stm = $db->prepare($q);
+                $stm->bindParam(':id', $id);
+                $stm->bindParam(':status', $status);
+                $row = $stm->execute();
+                return $row;
+        }
+
+         public function deleteFridge($id)
         {
                 $db = FridgeDB::getDB();
                 $q = "DELETE FROM GroceryFridge WHERE ID = :id";

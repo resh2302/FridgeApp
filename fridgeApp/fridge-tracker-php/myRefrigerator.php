@@ -95,9 +95,11 @@ FB::log($food);
             //dairy            
     		?>
     			<li class="element-item frd_items <?php echo $ff['Category']; ?>"> <!-- vf from db -->
-    				<p class="hide"><?php
+    				<p class="hide">
+              <?php
               echo $ff['Name'];
-            ?></p>
+            ?>
+          </p>
             <p class="hide">
               <?php
                 echo $ff['Category'];
@@ -483,40 +485,7 @@ function debounce( fn, threshold ) {
           $('#imgurl-insert').attr('value',newsrc);
        });
 
-       /* $('#fridge_add_done').click(function(e){
-          e.preventDefault();
-
-          name = $("#itm_name_ans").val();
-          qty = $("itm_name_qut").val();
-          cat = $("itm_name_cat").val();
-          date = $("itm_name_exp").val();
-          img = $("imgurl-insert").val();
-          mac = $("imgurl-insert").val();
-
-          $.ajax({
-            type: "POST",
-            url: "insertFood.php",
-            data: {
-                  name: name,
-                  qty: qty,
-                  cat: cat,
-                  date: date,
-                  img: img,
-                  mac: mac
-                    } 
-        })
-        .done(function(response) {
-            console.log("response  "+response);
-            // if(response)
-            // {
-            //     console.log(" here : "+response);
-            //     $("#fridge_body").load('myRefrigerator.php');
-            // }
-            // else{
-            //     console.log("insert failed");
-            // }
-        });
-        });*/
+       
     });
 
      //Onclick of food icon, edit delete button slide down
