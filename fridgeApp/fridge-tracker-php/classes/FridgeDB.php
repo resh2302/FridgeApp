@@ -1,20 +1,20 @@
 <?php
 
 /**
- * Class BonVoyageDB is used to get the connection to the database
+ * Class FRIDGE is used to get the connection to the database
  *
- * @author Ben Mo
+ * @author Jackie Liu I AM A BACKEND DEVELOPER!!!!! I LOVE DATABASE
  */
 
 class FridgeDB {
     //put your code here
-  private static $user = 'frdige_user';
-  private static $pass = 'a$b6Es03';
-  private static $dsn = "mysql:host=50.62.209.49:3306;dbname=frdige-tracker";
+  // private static $user = 'frdige_user';
+  // private static $pass = 'a$b6Es03';
+  // private static $dsn = "mysql:host=50.62.209.49:3306;dbname=frdige-tracker";
   
-//      private static $user = "root";
-//      private static $pass = "";
-//      private static $dsn = "mysql:host=localhost;dbname=bv2";
+     private static $user = "ben";
+     private static $pass = "123123";
+     private static $dsn = "mysql:host=localhost;dbname=frdige-tracker";
     
     private static $db;
     public static function getDB()
