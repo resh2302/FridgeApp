@@ -86,6 +86,18 @@ class groceryClass{
                 $row = $stm->execute();
                 return $row;
         }
+
+         public function updateFreezerStatus($id)
+        {
+                $status = "complete";
+                $db = FridgeDB::getDB();
+                $q = "UPDATE GroceryFreezer SET status = :status WHERE ID = :id";
+                $stm = $db->prepare($q);
+                $stm->bindParam(':id', $id);
+                $stm->bindParam(':status', $status);
+                $row = $stm->execute();
+                return $row;
+        }
              public function deleteFreezer($id)
         {
                 $db = FridgeDB::getDB();

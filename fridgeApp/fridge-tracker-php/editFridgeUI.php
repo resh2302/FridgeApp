@@ -6,6 +6,9 @@ require_once './classes/FridgeFood.php';
 require_once './classes/FreezerFood.php';
 require_once 'FirePHPCore-0.3.2/lib/FirePHPCore/fb.php';
 
+$string = file_get_contents("food.json");
+$list_a= json_decode($string, true);
+
 $ID = $_GET['ID'];
 $mac = $_GET['mac'];
 
@@ -180,12 +183,26 @@ else{
       </div>
       <div id="frd_itm_search">
         <ul class="portfolioContainer">
-          <li class="vf"><img src="images/items/beetroot.png"></li>
-          <li class="meat"><img src="images/items/chicken.png"></li>
-          <li class="meat"><img src="images/items/fish.png"></li>
-          <li class="dairy"><img src="images/items/milk.png"></li>
-          <li class="meat"><img src="images/items/sausage.png"></li>
-           <li class="meat"><img src="images/items/shrimp.png"></li>
+          <?php
+
+              foreach ($list_a['items'] as $li) {
+          ?>
+                <li class="<?php echo $li['category']; ?>"><img src="<?php echo $li['image']; ?>">
+
+          <?php
+                foreach ($li['names']['name'] as $name) {
+          ?>
+            <p class="hide">
+              <?php echo $name; ?>"
+            </p>
+          <?php
+                }
+          ?>
+              </li>
+
+          <?php
+              }
+          ?>
         </ul>
       </div>
 

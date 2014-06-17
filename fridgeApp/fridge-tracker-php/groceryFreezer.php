@@ -19,7 +19,10 @@ require_once './classes/groceryClass.php';
 	<title>Grocery list-Freezer</title>
 	<link rel="stylesheet" href="./assets/stylesheets/demo.css" />
 	  <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" />
+  <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+    
 	<link rel="stylesheet" type="text/css" href="css/main.css">
+
         
 </head>
 <body>
@@ -28,7 +31,7 @@ require_once './classes/groceryClass.php';
         <div class="back">
           <img src="images/white_back.png" alt="back">
         </div>
-      <h2>Fridge</h2>
+      <h2>GROCERY LIST FREEZER</h2>
       </div>
     </header>
     <div id="gl_frd_main">
@@ -36,18 +39,39 @@ require_once './classes/groceryClass.php';
     <div class="radio">
         <form method="POST" action="groceryFreezer.php" >
            
-               
+           <ul>    
                 <?php
                 $i =0; $j=0;
                     foreach ($items as $gfreezeItems)
                     {
                     ?>
-                        <input type="radio" class="freezerrad" name="item<?php echo $i++; ?>" value="<?php echo $gfreezeItems['ID'] ?>" />
-                        <input type="text" class="freezertext" name="txtItem<?php echo $j++; ?>" value="<?php echo $gfreezeItems['ItemName'] ?>" />
-                        <input type="button" class="btnDel" value="Delete" style="background: green" />
-                            <?php
+                      <li>
+                    <?php
+                        if($gfreezeItems['status']=="complete"){
+                    ?>
+                        <input type="radio" checked class="freezerrad" id="item<?php echo $i; ?>" name="item<?php echo $i; ?>" value="<?php echo $gfreezeItems['ID'] ?>" />
+                        <label class="lblRad" for="item<?php echo $i; ?>"></label>
+                        <input type="text" class="freezertext itemtext complete" name="txtItem<?php echo $j++; ?>" value="<?php echo $gfreezeItems['ItemName'] ?>" />
+                     <?php
+                        }
+                        else
+                        {
+                      ?>
+                           <input type="radio" class="freezerrad" id="item<?php echo $i; ?>" name="item<?php echo $i; ?>" value="<?php echo $gfreezeItems['ID'] ?>" />
+                        <label class="lblRad" for="item<?php echo $i; ?>"></label>
+                        <input type="text" class="freezertext itemtext" name="txtItem<?php echo $j++; ?>" value="<?php echo $gfreezeItems['ItemName'] ?>" />   
+                    <?php
                     }
                 ?>
+                <button type="button" class="btnDel">
+                            <i class="fa fa-minus-circle"></i> 
+                          </button>
+                       </li>
+                <?php
+                        $i++;
+                    }
+                ?>
+              </ul>
          
         </form>
         
@@ -57,11 +81,9 @@ require_once './classes/groceryClass.php';
            <input id="frd_list" type="radio" name="frd_list" value="frd_list">
           <label for="frd_list"></label>
           <input type="text" name="itemname" />
-<!--          <input type="hidden" name="fridgeid"/>-->
-			<br/>
-                        <input type="submit" value="Done" style="background: red"/>
-          
-                        
+          <button type="submit" class="btnDel">
+            <i class="fa fa-plus"></i> 
+          </button>        
                         
                         
                        

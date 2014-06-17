@@ -19,8 +19,8 @@ require_once './classes/groceryClass.php';
 	<title>Grocery list</title>
 	<link rel="stylesheet" href="./assets/stylesheets/demo.css" />
 	  <link rel="stylesheet" href="./assets/stylesheets/unsemantic-grid-responsive.css" />
-	<link rel="stylesheet" type="text/css" href="css/main.css">
   <link rel="stylesheet" type="text/css" href="css/font-awesome.min.css">
+	<link rel="stylesheet" type="text/css" href="css/main.css">
 </head>
 <body>
 	<header>
@@ -28,7 +28,7 @@ require_once './classes/groceryClass.php';
         <div class="back">
           <img src="images/white_back.png" alt="back">
         </div>
-      <h2>Fridge</h2>
+      <h2>GROCERY LIST FREEZER</h2>
       </div>
     </header>
     <div id="gl_frd_main">
